@@ -1,0 +1,19 @@
+.caption-about {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.about-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-item:hover {
+    opacity: 0.8;
+}
+ 
+.images {
+    width: 150px;
+    border-radius: 15%;
+}
