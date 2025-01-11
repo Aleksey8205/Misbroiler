@@ -10,7 +10,7 @@
 
 <body>
     <header id="header" class="header">
-        <a href="#header"><img class="logo" src="image/mis-crown.svg" alt="Логотип"></a>
+        <a href="about.html"><img class="logo" src="image/mis-crown.svg" alt="Логотип"></a>
         <input type="checkbox" class="menu-checkbox" id="menu-toggle">
         <label for="menu-toggle">
             <span class="menu-icon"></span>
@@ -50,15 +50,23 @@
             <article class="about">
                 <h2 class="caption">Чем занимается наше хозяйство</h2>
                 <section class="section">
-                    <div class="about-item-list">
+                    <button data-item="item1" class="about-item-list">
                         <img class="image" src="image/broiler-day.jpg" alt="цыплята">
                         <h3 class="heading">Цыплята</h3>
                         <p class="text"></p>
+                    </button>
+                    <div class="item-modal" id="item1">
+                        <p>Здесь может быть информация о цыплятах.</p>
+                        <span class="closed-button">×</span>
                     </div>
-                    <div class="about-item-list">
+                    <button data-item="item2" class="about-item-list">
                         <img class="image" src="image/tushka.png" alt="Курица">
                         <h3 class="heading">Тушки домашнего бройлера</h3>
                         <p class="text"></p>
+                    </button>
+                    <div class="item-modal" id="item2">
+                        <p>Здесь может быть .</p>
+                        <span class="closed-button">×</span>
                     </div>
                     <a class="links" href="#slider">
                         <div class="about-item-list">
@@ -71,21 +79,31 @@
                                 Корма для других сельскохозяйственных животных под заказ от 1 до 4 дней</p>
                         </div>
                     </a>
-                    <div class="about-item-list">
+                    <button data-item="item4" class="about-item-list">
                         <img class="image" src="image/eggs.webp" alt="яйцо">
-                        <h3 class="heading">Домашнее яйцо</h3>
                         <p class="text"></p>
+                    </button>
+                    <div class="item-modal" id="item4">
+                        <p>Здесь может быть информация о цыплятах.</p>
+                        <span class="closed-button">×</span>
                     </div>
-                    <div class="about-item-list">
+                    <button data-item="item5" class="about-item-list">
                         <img class="image" src="image/tushka.png" alt="Курица">
                         <h3 class="heading">Куры несушки</h3>
                         <p class="text"></p>
+                    </button>
+                    <div class="item-modal" id="item5">
+                        <p>Здесь может быть информация о цыплятах.</p>
+                        <span class="closed-button">×</span>
                     </div>
+                    <a class="links" href="about.html">
                     <div class="about-item-list">
                         <img class="image" src="image/tushka.png" alt="Курица">
                         <h3 class="heading">Наши поделки</h3>
                         <p class="text"></p>
                     </div>
+                </a>
+                <div class="overlay"></div>
                 </section>
             </article>
             <article class="megakorm">

@@ -161,3 +161,48 @@ function updateResultBlocks(animalType) {
         resultContainer.appendChild(stageDiv);
     });
 }
+
+    // Функция для открытия модального окна
+    function openModal(itemId) {
+        const modal = document.getElementById(itemId);
+        const overlay = document.querySelector('.overlay');
+        if (modal && overlay) {
+            modal.classList.add('active');
+            overlay.classList.add('active');
+        }
+    }
+    
+    // Функция для закрытия всех открытых модальных окон
+    function closeAllModals() {
+        const modals = document.querySelectorAll('.item-modal');
+        const overlay = document.querySelector('.overlay');
+        modals.forEach(modal => modal.classList.remove('active'));
+        if (overlay) {
+            overlay.classList.remove('active');
+        }
+    }
+    
+    // Обработчик событий для кнопок открытия модальных окон
+    document.body.addEventListener('click', function(event) {
+        const target = event.target.closest('.about-item-list');
+        if (target) {
+            const itemId = target.dataset.item;
+            if (itemId) {
+                openModal(itemId);
+            }
+        }
+    });
+    
+    // Обработчик событий для кнопок закрытия модальных окон
+    document.querySelectorAll('.closed-button').forEach(button => {
+        button.addEventListener('click', () => {
+            closeAllModals();
+        });
+    });
+    
+    // Закрытие модального окна при клике вне его области
+    window.onclick = function(event) {
+        if (event.target.classList.contains('overlay')) {
+            closeAllModals();
+        }
+    };

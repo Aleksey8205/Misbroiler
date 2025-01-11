@@ -176,19 +176,60 @@ display: none;
     justify-content: flex-start;
     align-items: center;
     align-self: flex-start;
+    background-color: white;
     padding: 10px;
     width: 300px;
     height: auto;
     border-radius: 5%;
+    border: none;
     margin-bottom: 2%;
     box-shadow: 5px 5px 5px gray;
     cursor: pointer;
+}
+
+.item-modal {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item-modal.active {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+
+.overlay.active {
+    display: block;
 }
 
 .about-item-list:active {
     transform: scale(0.9);
 }
 
+.closed-button {
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
 
 .image {
     width: 200px;
