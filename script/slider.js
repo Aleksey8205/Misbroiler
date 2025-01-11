@@ -77,33 +77,63 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-var slideIndextwo = 1;
-showSlides(slideIndextwo);
+var slideIndexTwo = 1;
+showSlides(slideIndexTwo);
 
 function plusSlides(n) {
-    showSlides(slideIndextwo += n);
+    showSlides(slideIndexTwo += n);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndextwo = n);
+    showSlides(slideIndexTwo = n);
 }
 
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndextwo = 1}
-    if (n < 1) {slideIndextwo = slides.length}
+    if (n > slides.length) {slideIndexTwo = 1}
+    if (n < 1) {slideIndexTwo = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndextwo-1].style.display = "block";
-    dots[slideIndextwo-1].className += " active";
+    slides[slideIndexTwo-1].style.display = "block";
+    dots[slideIndexTwo-1].className += " active";
 }
 
+// Добавление поддержки свайпов
+
+let touchStartX = 0;
+
+document.addEventListener('touchstart', function(event) {
+    touchStartX = event.touches[0].clientX;
+}, false);
+
+document.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+}, false);
+
+document.addEventListener('touchend', function(event) {
+    let touchEndX = event.changedTouches[0].clientX;
+    const deltaX = touchStartX - touchEndX;
+    
+    if (Math.abs(deltaX) > 40) {
+        if (deltaX > 0) {
+            plusSlides(-1);
+        } else {
+            plusSlides(1);
+        }
+    }
+}, false);
+
 document.addEventListener("DOMContentLoaded", function() {
-  currentSlide(1);
+    currentSlide(1);
 });
+
+// Автоматическое перелистывание слайдов каждые 5 секунд
+setInterval(function() {
+    plusSlides(1);
+}, 5000);
