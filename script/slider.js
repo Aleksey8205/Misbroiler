@@ -136,4 +136,4 @@ document.addEventListener("DOMContentLoaded", function() {
 // Автоматическое перелистывание слайдов каждые 5 секунд
 setInterval(function() {
     plusSlides(1);
-}, 5000);
+}, 15000);

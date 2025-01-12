@@ -48,6 +48,17 @@ html {
     width: 400px;
 }
 
+.logo-gif {
+    width: 250px;
+    margin-bottom: -20px;
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .link {
     text-decoration: none;
     color: inherit;
@@ -167,6 +178,7 @@ display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
+    color: #000000;
 }
 
 .about-item-list {
@@ -200,7 +212,7 @@ display: none;
     border-radius: 10px;
 }
 
-.item-modal.active {
+.item-modal.actives {
     display: block;
 }
 
@@ -212,11 +224,11 @@ display: none;
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0.7);
+
     z-index: 9;
 }
 
-.overlay.active {
+.overlay.actives {
     display: block;
 }
 
@@ -227,8 +239,8 @@ display: none;
 .closed-button {
     font-size: 50px;
     position: absolute;
-    left: 0;
-    top: -10px;
+    right: 10px;
+    top: 0;
 }
 
 .image {
@@ -455,6 +467,7 @@ z-index: -1;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -980,6 +993,11 @@ z-index: -1;
         width: 200px;
     }
 
+    .logo-gif {
+        width: 150px;
+        margin-bottom: 0;
+    }
+
     .footer-logo {
         width: 200px;
     }
@@ -1170,7 +1188,7 @@ z-index: -1;
         transition: background-color 0.6s ease;
     }
     
-    .active, .dot:hover {
+     .active, .dot:hover {
         background-color: #294a96;
     }
 } 

@@ -162,13 +162,14 @@ function updateResultBlocks(animalType) {
     });
 }
 
+
     // Функция для открытия модального окна
     function openModal(itemId) {
         const modal = document.getElementById(itemId);
         const overlay = document.querySelector('.overlay');
         if (modal && overlay) {
-            modal.classList.add('active');
-            overlay.classList.add('active');
+            modal.classList.add('actives');
+            overlay.classList.add('actives');
         }
     }
     
@@ -176,9 +177,9 @@ function updateResultBlocks(animalType) {
     function closeAllModals() {
         const modals = document.querySelectorAll('.item-modal');
         const overlay = document.querySelector('.overlay');
-        modals.forEach(modal => modal.classList.remove('active'));
+        modals.forEach(modal => modal.classList.remove('actives'));
         if (overlay) {
-            overlay.classList.remove('active');
+            overlay.classList.remove('actives');
         }
     }
     
