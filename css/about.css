@@ -1,3 +1,4 @@
+
 .caption-about {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,4 +17,30 @@
 .images {
     width: 150px;
     border-radius: 15%;
+}
+
+.about-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.aboot-list-item {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.list {
+    width: 40%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15%;
+    padding: 40px;
+    background: radial-gradient(circle, #aae7b6, white);
+}
+
+
+.misbroiler {
+    text-transform: uppercase;
 }
