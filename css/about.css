@@ -45,7 +45,21 @@
     border-radius: 15%;
     padding: 40px;
     background: radial-gradient(circle, #8ab493, white);
+    list-style-type: none;
 }
+
+.aboot-list-item::before {
+    display: flex;
+    content: '';
+    background-image: url("../svg/chicken-mini.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px; /* Размер изображения */
+    height: 20px; /* Размер изображения */
+    position: relative;
+    right: 25px;
+    top: 25px;
+  }
 
 
 .misbroiler {
