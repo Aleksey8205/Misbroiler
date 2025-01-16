@@ -33,13 +33,13 @@
 }
 
 .aboot-list-item {
-    font-size: 19px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
 .list {
-    width: 40%;
+    width: calc((100% / 2) - 50px);
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     border-radius: 15%;
