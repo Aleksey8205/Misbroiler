@@ -26,7 +26,7 @@ html {
     background-image: url(../image/eggz1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 10;
 
     color: white;
 }
@@ -195,7 +195,7 @@ display: none;
     border-radius: 5%;
     border: none;
     margin-bottom: 2%;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 0 0 50px gray;
     cursor: pointer;
 }
 
@@ -315,6 +315,7 @@ input[type='number'] {
     background-color: transparent;
     padding: 5px;
     border-radius: 30%;
+    position: relative;
 
 }
 
@@ -365,26 +366,26 @@ input[type='number'] {
 
 .itog-first {
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 .itog-second {
     position: relative;
     left: 100px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .itog-three {
     position: relative;
     bottom: 20px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .image-calculator {
     position: relative;
     width: 300px;
     height: 300px;
-    z-index: 0;
+    z-index: -2;
 }
 
 .text-carousel {
@@ -438,7 +439,7 @@ input[type='number'] {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 1;
 
     color: white;
 }
@@ -552,6 +553,7 @@ z-index: -1;
     position: relative;
     padding: 75px 40px 20px;
     margin-bottom: 50px;
+    z-index: 9;
 }
 
 

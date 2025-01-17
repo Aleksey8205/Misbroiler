@@ -54,10 +54,10 @@
     background-image: url("../svg/chicken-mini.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 20px; /* Размер изображения */
-    height: 20px; /* Размер изображения */
+    width: 25px; /* Размер изображения */
+    height: 25px; /* Размер изображения */
     position: relative;
-    right: 25px;
+    right: 30px;
     top: 25px;
   }
 
