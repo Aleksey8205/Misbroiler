@@ -183,3 +183,19 @@ window.onclick = function(event) {
         closeAllModals();
     }
 };
+
+function openModalImg(imgElement) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modalImg");
+    
+    // Устанавливаем содержимое модального окна
+    modal.style.display = "flex"; // Используем flexbox для центрирования изображения
+    modalImg.src = imgElement.src;
+    modalImg.alt = imgElement.alt;
+}
+
+// Функция закрытия модального окна
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
