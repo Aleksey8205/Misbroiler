@@ -29,8 +29,6 @@
                         onclick="document.getElementById('menu-toggle').checked = false;">Продукция</a></li>
                 <li class="item-list linked"><a class="linked" href="#slider"
                         onclick="document.getElementById('menu-toggle').checked = false;">комбикорм</a></li>
-                <li class="item-list linked"><a class="linked" href="infofmation.html"
-                        onclick="document.getElementById('menu-toggle').checked = false;">информация</a></li>
                 <li class="item-list linked"><a class="linked" href="#0"
                         onclick="document.getElementById('menu-toggle').checked = false;">Видео</a></li>
             </ul>
@@ -49,22 +47,40 @@
     </header>
     <div class="container">
         <main class="main">
+            <section>
+                <h2 class="caption">Актуальная информация</h2>
+                <div>123</div>
+            </section>
             <article class="about">
                 <h2 class="caption">Чем занимается наше хозяйство</h2>
                 <section class="section">
-                    <button data-item="item1" class="about-item-list">
-                        <img class="image" src="image/broiler-day.jpg" alt="цыплята">
-                        <h3 class="heading">Цыплята</h3>
-                        <p class="text"></p>
+                    <button data-item="item1" class="about-item-list item1">
+                        <section class="card">
+                            <h3 class="heading">Цыплята</h3>
+                            <div class="card-image-right">
+                                <img class="image" src="image/broiler-day.png" alt="">
+                            </div>
+                            <p class="text-item right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Animi eveniet architecto et dignissimos iure pariatur quod, commodi corrupti 
+                                facere molestias modi repellendus esse excepturi 
+                                voluptas deserunt minima suscipit numquam velit.</p>
+                        </section>
                     </button>
                     <div class="item-modal" id="item1">
                         <p>Здесь может быть информация о цыплятах.</p>
                         <span class="closed-button">×</span>
                     </div>
-                    <button data-item="item2" class="about-item-list">
-                        <img class="image" src="image/tushka.png" alt="Курица">
-                        <h3 class="heading">Тушки домашнего бройлера</h3>
-                        <p class="text">Тушки домашнего бройлера</p>
+                    <button data-item="item2" class="about-item-list item2">
+                        <section class="card">
+                            <h3 class="heading">Тушки домашнего бройлера</h3>
+                            <div class="card-image-left">
+                                <img class="image" src="image/tushka.png" alt="">
+                            </div>
+                            <p class="text-item left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Animi eveniet architecto et dignissimos iure pariatur quod, commodi corrupti 
+                                facere molestias modi repellendus esse excepturi 
+                                voluptas deserunt minima suscipit numquam velit. </p>
+                        </section>
                     </button>
                     <div class="item-modal" id="item2">
                         <div>
@@ -83,42 +99,64 @@
                         </div>
                         <span class="closed-button">×</span>
                     </div>
-                    <a class="links" href="#slider">
-                        <div class="about-item-list">
-                            <img class="image" src="image/megakorm.jpg" alt="Мегакорм">
+                    <button onclick="location.href='#slider'" class="about-item-list item3">
+                        <section class="card">
                             <h3 class="heading">Мегакорм</h3>
-                            <p class="text"> Являемся официальным дистрибьютором <a href="https://megakorm.ru/#map"
-                                    class="dist-mega">Мегакорм</a> Продаем комбикорм для различных видов
-                                сельскохозяйственных животных. <br>
+                            <p class="text-item center"> Являемся официальным дистрибьютором
+                                <a href="https://megakorm.ru/#map" class="dist-mega">Мегакорм</a>
+                                Продаем комбикорм для различных видов
+                                сельскохозяйственных животных.
                                 В наличии есть всегда комбикорм для бройлеров и кур-несушек.
-                                Корма для других сельскохозяйственных животных под заказ от 1 до 4 дней</p>
-                        </div>
-                    </a>
-                    <button data-item="item4" class="about-item-list">
-                        <img class="image" src="image/eggs.webp" alt="яйцо">
-                        <h3>Домашеее яйцо</h3>
-                        <p class="text"></p>
+                                Корма для других сельскохозяйственных животных под заказ от 1 до 4 дней
+                            </p>
+                        </section>
+                        <img class="image" src="image/megakorm.png" alt="">
+                    </button>
+                    <button data-item="item4" class="about-item-list item4">
+                        <section class="card">
+                            <h3 class="heading">Домашеее яйцо</h3>
+                            <div class="card-image-right">
+                                <img class="image" src="image/eggs.png" alt="">
+                            </div>
+                            <p class="text-item right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Animi eveniet architecto et dignissimos iure pariatur quod, commodi corrupti 
+                                facere molestias modi repellendus esse excepturi 
+                                voluptas deserunt minima suscipit numquam velit. </p>
+                        </section>
                     </button>
                     <div class="item-modal" id="item4">
-                        <p>Здесь может быть информация о цыплятах.</p>
-                        <span class="closed-button">×</span>
+                        <section>
+                            <p>Здесь может быть информация о цыплятах.</p>
+                            <span class="closed-button">×</span>
+                            <section>
                     </div>
-                    <button data-item="item5" class="about-item-list">
-                        <img class="image" src="image/tushka.png" alt="Курица">
-                        <h3 class="heading">Куры несушки</h3>
-                        <p class="text"></p>
+                    <button data-item="item5" class="about-item-list item5">
+                        <section class="card">
+                            <h3 class="heading">Куры несушки</h3>
+                            <div class="card-image-left">
+                                <img class="image" src="image/eggs.png" alt="">
+                            </div>
+                            <p class="text-item left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Animi eveniet architecto et dignissimos iure pariatur quod, commodi corrupti 
+                                facere molestias modi repellendus esse excepturi 
+                                voluptas deserunt minima suscipit numquam velit. </p>
+                        </section>
                     </button>
                     <div class="item-modal" id="item5">
                         <p>Здесь может быть информация о цыплятах.</p>
                         <span class="closed-button">×</span>
+
                     </div>
-                    <a class="links" href="about.html">
-                        <div class="about-item-list">
-                            <img class="image" src="image/tushka.png" alt="Курица">
+                    <button onclick="location.href='about.html'" class="about-item-list item6">
+                        <section class="card">
                             <h3 class="heading">Наши поделки</h3>
-                            <p class="text"></p>
-                        </div>
-                    </a>
+                            <p class="text-item center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Animi eveniet architecto et dignissimos iure pariatur quod, commodi corrupti 
+                                facere molestias modi repellendus esse excepturi 
+                                voluptas deserunt minima suscipit numquam velit. </p>
+                        </section>
+                        <img class="image" src="image/broiler-day.png" alt="">
+                    </button>
                     <div class="overlay"></div>
                 </section>
             </article>
@@ -2956,7 +2994,6 @@
                 <li class="nav-list"><a class="link" href="#calc">Калькулятор</a></li>
                 <li class="nav-list"><a class="link" href="#0">Продукция</a></li>
                 <li class="nav-list"><a class="link" href="#slider">комбикорм</a></li>
-                <li class="nav-list"><a class="link" href="infofmation.html">информация</a></li>
                 <li class="nav-list"><a class="link" href="#0">Видео</a></li>
             </ul>
         </div>
