@@ -1,15 +1,10 @@
 .content {
-   padding-left: 50px;
-   padding-right: 50px; 
-   align-content: center;
-   justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-content: center;
+    justify-content: center;
 }
 
-.caption-about {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
 
 .text-about {
     font-size: 25px;
@@ -18,9 +13,111 @@
     text-align: center;
 }
 
+.about-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.aboot-list-item {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(90deg, #3f9b0b, #ffffff, #93bec4);
+    border-radius: 15px;
+    padding-left: 35px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 50px);
+    place-content: center;
+    gap: 30px;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+    list-style-type: none;
+}
+
+.item-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+.item-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+.item-3 {
+    grid-row: span 2;
+}
+
+.item-4 {
+    grid-row: span 2;
+}
+
+.item-5 {
+    grid-row: span 3;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+.item-6 {
+    grid-row: span 3;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+.item-7 {
+    grid-row: span 3;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+.item-8 {
+    grid-row: span 3;
+    align-content: center;
+    padding-bottom: 25px;
+}
+
+.item-9 {
+    grid-row: span 2;
+}
+
+.item-10 {
+    grid-row: span 2;
+}
+
+.item-11 {
+    grid-column: span 4;
+    grid-row: span 2;
+    text-align: center;
+}
+
+
+.aboot-list-item::before {
+    display: flex;
+    content: '';
+    background-image: url("../svg/chicken-mini.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 30px;
+    top: 25px;
+}
+
 .about-items {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(6, 150px);
     gap: 15px;
     justify-content: center;
 }
@@ -32,48 +129,12 @@
 .figure-img {
     margin: 0;
 }
- 
+
 .images {
-    width: 250px;
-    height: 240px;
+    width: 150px;
+    height: 140px;
     border-radius: 15px;
 }
-
-.about-list {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.aboot-list-item {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-}
-
-.list {
-    width: calc((100% / 2) - 50px);
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    border-radius: 15%;
-    padding: 40px;
-    background: radial-gradient(circle, #8ab493, white);
-    list-style-type: none;
-}
-
-.aboot-list-item::before {
-    display: flex;
-    content: '';
-    background-image: url("../svg/chicken-mini.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25px; /* Размер изображения */
-    height: 25px; /* Размер изображения */
-    position: relative;
-    right: 30px;
-    top: 25px;
-  }
-
 
 .misbroiler {
     text-transform: uppercase;
@@ -81,7 +142,8 @@
 
 /* Стили для модального окна */
 .modal-image {
-    display: none; /* Скрываем модальное окно по умолчанию */
+    display: none;
+    /* Скрываем модальное окно по умолчанию */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -97,7 +159,7 @@
 }
 
 .text-img {
-    font-size: 20px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     align-content: center;
 }
@@ -111,7 +173,7 @@
     left: 0;
     opacity: 0.3;
     background-color: #000000;
-    
+
     z-index: -1;
 }
 
