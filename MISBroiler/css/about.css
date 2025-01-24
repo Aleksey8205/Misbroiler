@@ -1,0 +1,156 @@
+.content {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-about {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.aboot-list-item {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    box-sizing: border-box;
+    width: calc((100% / 2) - 30px);
+    list-style-type: none;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+
+.item-1 {
+    background: linear-gradient(34deg, #3f9b0b, #ffffff, #93bec4);
+}
+
+.item-2 {
+    background: linear-gradient(329deg, #3f9b0b, #ffffff, #93bec4);
+}
+
+.aboot-list-item::before {
+    display: flex;
+    content: '';
+    background-image: url("../svg/chicken-mini.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 30px;
+    top: 25px;
+}
+
+.about-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.about-item:hover {
+    opacity: 0.8;
+}
+
+.description {
+
+}
+
+.images {
+    width: 360px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.text-description {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    max-width: 360px;
+}
+
+.misbroiler {
+    text-transform: uppercase;
+}
+
+/* Стили для модального окна */
+.modal-image {
+    display: none;
+    /* Скрываем модальное окно по умолчанию */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: #000000;
+    z-index: -1;
+}
+
+.closeModal {
+    padding: 14px;
+    background-color: white;
+    background-image: url(../svg/cross.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    right: 35px;
+    top: -320px;
+}
+
+.modal-content {
+    max-width: 90%;
+    height: 90vh;
+    margin: 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 1023px) {
+    .text-about {
+        font-size: 18px;
+    }
+    
+    .list {
+        width: 100%;
+    }
+
+    .aboot-list-item {
+        font-size: 16px;
+    }
+}
