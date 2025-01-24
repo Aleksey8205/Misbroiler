@@ -185,16 +185,18 @@ window.onclick = function(event) {
 };
 
 function openModalImg(imgElement) {
+    // Получение ссылки на изображение
     var modal = document.getElementById("modal");
     var modalImg = document.getElementById("modalImg");
     
-    // Устанавливаем содержимое модального окна
-    modal.style.display = "flex"; // Используем flexbox для центрирования изображения
+    // Открытие модального окна
+    modal.style.display = "flex";
     modalImg.src = imgElement.src;
-    modalImg.alt = imgElement.alt;
+    
+    // Добавление обработчика для закрытия модального окна при клике на изображение
+    modalImg.onclick = closeModal;
 }
 
-// Функция закрытия модального окна
 function closeModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";

@@ -1011,7 +1011,7 @@ z-index: -1;
         transform: translateX(-50%);
         max-width: 50px;
         text-align: center;
-        z-index: 99;
+        z-index: 0;
     }
 
     .menu {
@@ -1097,6 +1097,10 @@ z-index: -1;
 
     .modal-window__animal-main_item {
         width: 900px;
+    }
+
+    .list {
+        width: 100%;
     }
 }
 
