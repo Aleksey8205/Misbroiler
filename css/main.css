@@ -1,6 +1,7 @@
 body,
 html {
     margin: 0;
+    background-color: #d8f6ff;
 }
 
 .container {
@@ -1011,7 +1012,7 @@ z-index: -1;
         transform: translateX(-50%);
         max-width: 50px;
         text-align: center;
-        z-index: 0;
+        z-index: 1;
     }
 
     .menu {
@@ -1117,6 +1118,7 @@ z-index: -1;
         flex-direction: column;
         margin-top: 0;
     }
+
 }
 
 @media (max-width: 768px) {
