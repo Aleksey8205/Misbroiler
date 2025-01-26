@@ -159,13 +159,15 @@
 
 .slide-content {
     padding: 20px;
-    width: 400px;
+    max-width: 400px;
 }
 
 .slide {
     display: none;
     max-width: 90%;
-    transition: transform 0.5s ease-in-out;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(214deg, #3f9b0b, #ffffff, #93bec4);
 }
 
 .slide.active {
@@ -177,6 +179,7 @@
     height: 400px;
     object-fit: cover;
     background-color: gray;
+    border-radius: 15px;
 }
 
 .previrous-button,
@@ -192,12 +195,12 @@
 }
 
 .previrous-button {
-    left: -25px;
+    left: -45px;
     background-image: url(../svg/next.svg);
 }
 
 .nexts-button {
-    right: 0;
+    right: -45px;
     background-image: url(../svg/previorus.svg);
     background-repeat: no-repeat;
 }
@@ -218,11 +221,12 @@
 
 @media (max-width: 880px) {
     .image-hangar {
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 300px;
     }
 
     .slide.active {
         display: block;
+        justify-items: center;
     }
 }
