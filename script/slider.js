@@ -201,3 +201,34 @@ function closeModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.container'); // Контейнер, в котором находятся элементы
+    const observerOptions = {
+        rootMargin: '0px',
+        threshold: [0, 0.25] 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            const direction = entry.target.dataset.direction;
+            if (entry.isIntersecting) {
+                entry.target.classList.add(`animate-${direction}`); // Добавляем класс анимации при пересечении
+            } else {
+                entry.target.classList.remove(`animate-${direction}`); // Удаляем класс анимации при выходе из зоны видимости
+            }
+        });
+    }, observerOptions);
+
+    // Функция для наблюдения за новыми элементами
+    const observeNewElements = () => {
+        const newItems = container.querySelectorAll('.about-item-list');
+        newItems.forEach(item => {
+            observer.observe(item);
+        });
+    };
+
+    // Наблюдаем за всеми существующими элементами
+    observeNewElements();
+});

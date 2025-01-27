@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МИС Бройлер</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
 </head>
-
 <body>
     <header id="header" class="header">
         <a class="logo-link" href="about.html">
@@ -35,8 +35,10 @@
             <span class="close-button" onclick="document.getElementById('menu-toggle').checked = false;">×</span>
             <address>
                 <ul class="nav-link">
-                    <li class="item-list linked adres"><a class="linked link-nav"
+                    <li class="item-list linked "><a class="linked link-nav"
                             href="https://yandex.ru/maps/-/CHAy7AIX">Мы на карте</a></li>
+                            <li class="item-list linked"><a class="linked link-avito"
+                                href="">Мы на Авито</a></li>
                     <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
                     </li>
                     <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
@@ -54,7 +56,7 @@
             <article class="about">
                 <h2 class="caption">Чем занимается наше хозяйство</h2>
                 <section class="section">
-                    <button data-item="item1" class="about-item-list item1">
+                    <button data-item="item1" data-direction="left" class="about-item-list item1">
                         <section class="card">
                             <h3 class="heading">Цыплята</h3>
                             <div class="card-image-right">
@@ -70,7 +72,7 @@
                         <p>Здесь может быть информация о цыплятах.</p>
                         <span class="closed-button">×</span>
                     </div>
-                    <button data-item="item2" class="about-item-list item2">
+                    <button data-item="item2" data-direction="right" class="about-item-list item2">
                         <section class="card">
                             <h3 class="heading">Тушки домашнего бройлера</h3>
                             <div class="card-image-left">
@@ -99,7 +101,7 @@
                         </div>
                         <span class="closed-button">×</span>
                     </div>
-                    <button onclick="location.href='#slider'" class="about-item-list item3">
+                    <button onclick="location.href='#slider'" data-direction="bottom" class="about-item-list item3">
                         <section class="card">
                             <h3 class="heading">Мегакорм</h3>
                             <p class="text-item center"> Являемся официальным дистрибьютором
@@ -112,7 +114,7 @@
                         </section>
                         <img class="image" src="image/megakorm.png" alt="">
                     </button>
-                    <button data-item="item4" class="about-item-list item4">
+                    <button data-item="item4" data-direction="left" class="about-item-list item4">
                         <section class="card">
                             <h3 class="heading">Домашеее яйцо</h3>
                             <div class="card-image-right">
@@ -130,7 +132,7 @@
                             <span class="closed-button">×</span>
                             <section>
                     </div>
-                    <button data-item="item5" class="about-item-list item5">
+                    <button data-item="item5" data-direction="right" class="about-item-list item5">
                         <section class="card">
                             <h3 class="heading">Куры несушки</h3>
                             <div class="card-image-left">
@@ -147,7 +149,7 @@
                         <span class="closed-button">×</span>
 
                     </div>
-                    <button onclick="location.href='about.html'" class="about-item-list item6">
+                    <button onclick="location.href='about.html'" data-direction="bottom" class="about-item-list item6 ">
                         <section class="card">
                             <h3 class="heading">Наши поделки</h3>
                             <p class="text-item center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -160,7 +162,7 @@
                     <div class="overlay"></div>
                 </section>
             </article>
-            <article class="megakorm">
+            <article class="megakorm wow">
                 <section class="slider-wrapper">
                     <div class="slider" id="slider">
                         <div class="item"> <!-- 1 животное-->
@@ -2880,7 +2882,7 @@
                             <p class="text">С помощью нашего калькулятора вы можете посчитать
                                 сколько корма понадобится
                                 для вашего поголовья. Выберите животное,
-                                введите количество голов и получите расчет.</p>
+                                введите количество голов и получите расчет кратный 1 мешку.</p>
                             <div class="animal-container"><!--контейнер животных-->
                                 <!--одно животное-->
                                 <div class="animals-item-list">
@@ -3022,5 +3024,4 @@
 </body>
 <script src="script/script.js"></script>
 <script src="script/slider.js"></script>
-
 </html>
