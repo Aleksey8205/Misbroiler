@@ -282,7 +282,7 @@ html {
     background: linear-gradient(14deg, #294a96, #fdfdfd);
     grid-column: span 6;
     display: flex;
-    justify-content: space-around;
+    justify-content: between;
 }
 
 .item4 {
