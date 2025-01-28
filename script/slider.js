@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container'); // Контейнер, в котором находятся элементы
     const observerOptions = {
         rootMargin: '0px',
-        threshold: [0, 0.25] 
+        threshold: [0, 0.1] 
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
