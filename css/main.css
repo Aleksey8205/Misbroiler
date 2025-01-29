@@ -213,17 +213,17 @@ html {
 
 .about-item-list.animate-right {
     transform: translateX(100%);
-    animation: slideInFromRight 1.5s ease-in-out both;
+    animation: slideInFromRight 1.2s ease-in-out both;
 }
 
 .about-item-list.animate-left {
     transform: translateX(-100%);
-    animation: slideInFromLeft 1.5s ease-in-out both;
+    animation: slideInFromLeft 1.2s ease-in-out both;
 }
 
 .about-item-list.animate-bottom {
     transform: translateY(100%);
-    animation: slideUp 2s ease-in-out both;
+    animation: slideUp 1.7s ease-in-out both;
 }
 
 @keyframes slideInFromRight {
