@@ -30,6 +30,7 @@ html {
     padding-bottom: 50px;
     min-height: 350px;
     position: relative;
+    background-color: grey;
     background-image: url(../image/eggz1.jpg);
     background-position: bottom;
     background-size: cover;
