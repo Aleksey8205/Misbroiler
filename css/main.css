@@ -1,5 +1,18 @@
-body,
-html {
+@font-face {
+    font-family: opensansRegular;
+    src: url("../font/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: opensansBold;
+    src: url("../font/OpenSans-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+body {
     margin: 0;
     overflow-x: hidden;
 }
@@ -104,11 +117,11 @@ html {
 }
 
 .item-list {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: opensansBold;
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 
@@ -134,7 +147,9 @@ html {
 /*MAIN*/
 .about-text {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansRegular;
+    font-style: normal;
+    font-weight: 400;
     border-radius: 20%;
     padding: 20px;
     margin-bottom: 50px;
@@ -143,7 +158,8 @@ html {
 .caption {
     text-align: center;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
+    font-style: normal;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 25px;
@@ -168,7 +184,9 @@ html {
 
 .font {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansRegular;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .date-time {
@@ -190,7 +208,8 @@ html {
 .heading {
     margin-top: 10px;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
+    font-style: normal;
     font-size: 20px;
     font-weight: bold;
     color: #000000;
@@ -270,7 +289,9 @@ html {
 
 .text-item {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansRegular;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -347,11 +368,24 @@ html {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
+    overflow-y: auto;
 }
 
 .item-modal.actives {
     display: block;
 }
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.image-chicken {
+    object-fit: cover;
+    width: calc((100% / 3) - 5px);
+}
+
 
 .overlay {
     display: none;
@@ -403,9 +437,10 @@ html {
 }
 
 .text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: opensansRegular;
     font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
     color: black;
     display: block;
 }
@@ -488,7 +523,7 @@ input[type='number'] {
 
 .itog-all {
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
     font-weight: bold;
     font-style: normal;
     color: #30529f;
@@ -501,15 +536,17 @@ input[type='number'] {
 
 .results {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansRegular;
     font-style: normal;
+    font-weight: 400;
 }
 
 .text-calc {
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-family: opensansBold;
     font-weight: bold;
+    font-style: normal;
     width: 162px;
     color: #30529f;
     text-transform: uppercase;
@@ -623,10 +660,10 @@ input[type='number'] {
     align-items: center;
     gap: 15px;
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
+    font-weight: bold;
     font-style: normal;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .address-list {
@@ -645,7 +682,7 @@ input[type='number'] {
 .nav-list {
     display: flex;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
     font-size: 20px;
     font-style: normal;
     font-weight: bold;
@@ -712,16 +749,16 @@ input[type='number'] {
 
 .caption-slider {
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
     font-weight: bold;
     color: rgb(41, 49, 126);
 }
 
 .text-carousel {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
     font-style: normal;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 26px;
     color: #294a96;
 
@@ -976,7 +1013,8 @@ input[type='number'] {
 }
 
 .caption-benefits {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansBold;
+    font-style: normal;
     font-size: 20px;
     font-weight: bold;
     color: #294a96;
@@ -984,7 +1022,9 @@ input[type='number'] {
 
 .benefits-text {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: opensansRegular;
+    font-weight: 400;
+    font-style: normal;
     line-height: 1.5;
 }
 
@@ -1064,7 +1104,7 @@ input[type='number'] {
     .menu-sticky {
         display: block;
         position: sticky;
-        bottom: 5%;
+        bottom: 50px;
         left: 100%;
         transform: translateX(-50%);
         max-width: 50px;
@@ -1208,6 +1248,11 @@ input[type='number'] {
     .item6 {
         grid-column: span 4;
     }
+
+    .image-chicken {
+        width: calc((100% / 2) - 5px);
+    }
+    
 
     .card-image-left {
         width: 150px;
@@ -1402,6 +1447,12 @@ input[type='number'] {
     .item6 {
         grid-column: span 2;
     }
+
+    .image-chicken {
+        object-fit: cover;
+        width: 100%;
+    }
+    
 
     .heading {
         font-size: 16px;
