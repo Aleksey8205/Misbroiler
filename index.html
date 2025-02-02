@@ -79,24 +79,32 @@
                 <h2 class="caption">Чем занимается наше хозяйство</h2>
                 <section class="section">
                     <button data-item="item1" data-direction="left" class="about-item-list item1">
-                        <section class="card">
+                        <div class="card">
                             <h3 class="heading">Цыплята</h3>
                             <div class="card-image-right">
                                 <img class="image" src="image/broiler-day.png" alt="">
                             </div>
-                            <p class="text-item right">Выводим цыплят бройлера КРОСС ROSS308/КОББ500,
-                                КОББ700/Смена9 из лучшего инкубационного яйца отечественных и импортных
+                            <p class="text-item right">Выводим цыплят бройлера КРОСС ROSS308 / КОББ500 /
+                                КОББ700 / Смена9 из лучшего инкубационного яйца отечественных и импортных
                                 производителей. Выращиваем цыплят без применения химии в своем хозяйстве
                                 до убоя.
                             </p>
-                        </section>
+                        </div>
                     </button>
                     <div class="item-modal" id="item1">
-                        <p>Здесь может быть информация о цыплятах.</p>
+                        <div class="image-grid">
+                            <img class="image-chicken" src="/image-chicken/photo_1.jpg" alt="">
+                            <img class="image-chicken" src="/image-chicken/photo_2.jpg" alt="">
+                            <img class="image-chicken" src="/image-chicken/photo_3.jpg" alt="">
+                            <img class="image-chicken" src="/image-chicken/photo_6.jpg" alt="">
+                            <img class="image-chicken" src="/image-chicken/photo_9.jpg" alt="">
+                            <img class="image-chicken" src="/image-chicken/photo_11.jpg" alt="">
+                            <img class="image-chicken" src="/image-chicken/photo_4.jpg" alt="">
+                        </div>
                         <span class="closed-button">×</span>
                     </div>
                     <button data-item="item2" data-direction="right" class="about-item-list item2">
-                        <section class="card">
+                        <div class="card">
                             <h3 class="heading">Тушки домашнего бройлера</h3>
                             <div class="card-image-left">
                                 <img class="image" src="image/tushka.png" alt="">
@@ -104,7 +112,7 @@
                             <p class="text-item left"> Реализуем экологически чистые гипоаллергенные тушки
                                 домашнего бройлера высокого качества и внешнего вида. Вес от 2.2 кг до 3 кг.
                             </p>
-                        </section>
+                        </div>
                     </button>
                     <div class="item-modal" id="item2">
                         <div>
@@ -124,7 +132,7 @@
                         <span class="closed-button">×</span>
                     </div>
                     <button onclick="location.href='#slider'" data-direction="bottom" class="about-item-list item3">
-                        <section class="card">
+                        <div class="card">
                             <h3 class="heading">Мегакорм</h3>
                             <p class="text-item center"> Являемся официальным дистрибьютором
                                 <a href="https://megakorm.ru/#map" class="dist-mega">Мегакорм</a>
@@ -133,13 +141,13 @@
                                 В наличии есть всегда комбикорм для бройлеров и кур-несушек.
                                 Корма для других сельскохозяйственных животных под заказ от 1 до 4 дней.
                             </p>
-                        </section>
+                        </div>
                         <div class="flex">
                             <img class="image" src="image/megakorm.png" alt="">
                         </div>
                     </button>
                     <button data-item="item4" data-direction="left" class="about-item-list item4">
-                        <section class="card">
+                        <div class="card">
                             <h3 class="heading">Домашеее яйцо</h3>
                             <div class="card-image-right">
                                 <img class="image" src="image/layers-eggz.png" alt="">
@@ -149,16 +157,16 @@
                                 Лекарственные
                                 препараты не применяем.
                             </p>
-                        </section>
+                        </div>
                     </button>
                     <div class="item-modal" id="item4">
                         <section>
                             <p>Здесь может быть информация о цыплятах.</p>
                             <span class="closed-button">×</span>
-                            <section>
+                        </section>
                     </div>
                     <button data-item="item5" data-direction="right" class="about-item-list item5">
-                        <section class="card">
+                        <div class="card">
                             <h3 class="heading">Куры несушки</h3>
                             <div class="card-image-left">
                                 <img class="image" src="image/layers.png" alt="">
@@ -168,7 +176,7 @@
                                 Средний показатель 300 яиц в год массой до 70г, часто двухжелтковое.
                                 В зависимости от подвида имеет декоративный цвет скорлупы.
                             </p>
-                        </section>
+                        </div>
                     </button>
                     <div class="item-modal" id="item5">
                         <p>Здесь может быть информация о цыплятах.</p>
@@ -176,7 +184,7 @@
 
                     </div>
                     <button onclick="location.href='about.html'" data-direction="bottom" class="about-item-list item6 ">
-                        <section class="card">
+                        <div class="card">
                             <h3 class="heading">Наши наработки</h3>
                             <p class="text-item center">Творчески подходим к доработкам всякого рода устройств для
                                 выращивания
@@ -186,7 +194,7 @@
                                 вреда Для
                                 природы.
                             </p>
-                        </section>
+                        </div>
                         <img class="image" src="svg/idea-box.svg" alt="">
                     </button>
                     <div class="overlay"></div>
@@ -212,7 +220,7 @@
                                     «Мегакорм» обеспечивает высокую продуктивность птиц и темпы роста, так как содержит
                                     весь необходимый комплекс витаминов и микроэлементов, оптимальный для бройлеров.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal1" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -317,7 +325,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Массовая доля влаги, макс. </p>
-                                            <p>%11</p>
+                                            <p>% 11</p>
                                             <p>13</p>
                                             <p>13</p>
                                             <p>13</p>
@@ -325,7 +333,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Лизин </p>
-                                            <p>%12</p>
+                                            <p>% 12</p>
                                             <p>1.35</p>
                                             <p>1.05</p>
                                             <p>0.9</p>
@@ -333,7 +341,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Метионин+цистин </p>
-                                            <p>%13</p>
+                                            <p>% 13</p>
                                             <p>1</p>
                                             <p>0.81</p>
                                             <p>0.7</p>
@@ -341,7 +349,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Кальций, мин. </p>
-                                            <p>%14</p>
+                                            <p>% 14</p>
                                             <p>0.9</p>
                                             <p>0.8</p>
                                             <p>0.7</p>
@@ -349,7 +357,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Фосфор, мин. </p>
-                                            <p>%15</p>
+                                            <p>% 15</p>
                                             <p>0.6</p>
                                             <p>0.5</p>
                                             <p>0.45</p>
@@ -357,7 +365,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Натрий, мин.</p>
-                                            <p>%16</p>
+                                            <p>% 16</p>
                                             <p>0.16</p>
                                             <p>0.16</p>
                                             <p>0.16</p>
@@ -365,7 +373,7 @@
                                         </div>
                                         <div class="modal-window__animal-main_item">
                                             <p>Хлорид натрия, макс. </p>
-                                            <p>%17</p>
+                                            <p>% 17</p>
                                             <p>0.3</p>
                                             <p>0.3</p>
                                             <p>0.3</p>
@@ -568,7 +576,7 @@
                                     Содержит продукты переработки масличных и бобовых культур - для обогащения
                                     протеинами и повышения питательности.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal2" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -878,7 +886,7 @@
                                     Содержит белки животного происхождения, аминокислоты, макро-и микроэлементы, а
                                     также комплекс витаминов.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal3" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -1251,7 +1259,7 @@
                                     Включает все необходимые витамины, макро- и микроэлементы, а также специальные
                                     добавки и органические микроэлементы, укрепляющие иммунитет.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal4" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -1623,7 +1631,7 @@
                                     Содержит полный набор ферментов, витаминов, макро– и микроэлементов для здоровья
                                     птиц.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal5" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -1876,7 +1884,7 @@
                                     ароматизаторы. Включает в себя макро- и микроэлементы, ферменты, витамины, а
                                     также специальные добавки.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal6" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -2191,7 +2199,7 @@
                                     привлекательного вида мяса.
                                     Содержит белки животного происхождения, макро и микроэлементы, и витамины.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal7" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -2495,7 +2503,7 @@
                                     питательность. Для улучшения перевариваемости корма в состав добавлены ферменты.
                                     Содержит оптимальный для индеек комплекс витаминов, микро- и макроэлементов.</p>
                                 <div class="more">
-                                    <a href="#calc"><button class="carousel-btn">Рассчитать</button></a>
+                                    <button onclick="location.href='#calc'" class="carousel-btn">Рассчитать</button>
                                     <button data-modal="modal8" class="carousel-label carousel-btn">Подробнее о
                                         продукте</button>
                                 </div>
@@ -3017,8 +3025,9 @@
                     </div> <!-- КОНЕЦ калькулятора-->
             </section>
         </main>
-        <img data-item="item6" data-direction="bottom" class="about-item-list animate-bottom image-megamiks" src="image/Megamiks.jpg" alt="">
-</div>
+        <img data-item="item6" data-direction="bottom" class="about-item-list animate-bottom image-megamiks"
+            src="image/Megamiks.jpg" alt="">
+    </div>
     <footer class="footer-wrapper">
         <div>
             <ul class="nav">
@@ -3049,11 +3058,11 @@
             </ul>
         </address>
     </footer>
-    <label for="menu-toggle">
+    <label for="menu-toggle" style="width: 1px;">
         <img class="menu-sticky" src="image/menu_w88x7uezfxkn.svg" alt="">
     </label>
+    <script src="script/script.js"></script>
+    <script src="script/slider.js"></script>
 </body>
-<script src="script/script.js"></script>
-<script src="script/slider.js"></script>
 
 </html>
