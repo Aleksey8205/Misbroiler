@@ -190,7 +190,7 @@ body {
 }
 
 .date-time {
-    width: 150px;
+    width: 180px;
 }
 
 .section {
@@ -225,7 +225,7 @@ body {
 
 .about-item-list {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
     overflow-x: hidden;
 }
 
@@ -241,7 +241,7 @@ body {
 
 .about-item-list.animate-bottom {
     transform: translateY(100%);
-    animation: slideUp 2s ease-in-out both;
+    animation: slideUp 3s ease-in-out both;
 }
 
 @keyframes slideInFromRight {
@@ -367,6 +367,7 @@ body {
     height: 100%;
     background-color: rgb(255, 255, 255);
     padding: 20px;
+    padding-top: 60px;
     border-radius: 10px;
     overflow-y: auto;
 }
@@ -410,6 +411,7 @@ body {
 .closed-button {
     font-size: 50px;
     position: absolute;
+    background-color: #f9f9fc;
     right: 10px;
     top: 0;
 }

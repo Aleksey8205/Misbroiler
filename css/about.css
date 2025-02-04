@@ -39,7 +39,6 @@
 .aboot-list-item {
     font-size: 25px;
     font-family: opensansRegular;
-    src: url("../font/OpenSans-Regular.woff");
     font-style: normal;
 }
 
@@ -159,30 +158,75 @@
     margin: 0;
     border-radius: 20px;
 }
-
-.grid-image {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    gap: 10px;
-}
-
+  
 .image-hangar {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-
-
-
-.big-1 {
-    grid-row: 1 / 2 span;
-    grid-column: 3 / 2 span;
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+    margin-bottom: 70px;
 }
 
-.big-2 {
-    grid-row: 3 / 2 span;
-    grid-column: 1 / 2 span;
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show {
+    max-height: 2500px; 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px solid #93bec4;
+    background: linear-gradient(2deg, #3f9b0b, #ffffff, #93bec4);
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    
+    font-size: 15px;
+    font-family: opensansRegular;
+    font-style: normal;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.button-center {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.down_arrow {
+    width: 30px;
+    padding-left: 20px;
+}
+
+
+.toggle-btn:active {
+    transform: scale(0.95);
+    border: 1px solid #93bec4;
+}
+
+.item-hangar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-hangar {
+    width: 350px;
 }
 
 @media (max-width: 1023px) {
@@ -199,19 +243,16 @@
     }
 }
 
-@media (max-width: 768px) {
-    .grid-image {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 200px);
+@media (max-width: 860px) {
+    .images {
+        width: 300px;
     }
 
-    .big-1 {
-        grid-column: span 1;
-        grid-row: span 1;
+    .description {
+        width: 300px;
     }
 
-    .big-2 {
-        grid-column: span 1;
-        grid-row: span 1;
+    .button-center {
+        justify-content: center;
     }
 }

@@ -53,27 +53,30 @@
                 <h2 class="caption">Актуальная информация</h2>
                 <div class="actual-info">
                     <div class="actual-item">
-                        <time class="date-time font" datetime="2025-01-30">30 января 2025г</time>
-                        <p class="date-text font">здесь будет текст о выводе птицы и актуальной информацией <br>
-                            здесь будет текст о выводе птицы и актуальной информацией <br>
-                            здесь будет текст о выводе птицы и актуальной информацией
-                        </p>
+                        <time class="date-time font" datetime="2025-01-30">30 января 2025 г.</time>
+                        <p class="date-text font">Текст первого элемента</p>
                     </div>
                     <div class="actual-item">
-                        <time class="date-time font" datetime="2025-01-30">30 января 2025г</time>
-                        <p class="date-text font">здесь будет текст о выводе птицы и актуальной информацией <br>
-                            здесь будет текст о выводе птицы и актуальной информацией <br>
-                            здесь будет текст о выводе птицы и актуальной информацией
-                        </p>
+                        <time class="date-time font" datetime="2025-02-15">15 февраля 2025 г.</time>
+                        <p class="date-text font">Текст второго элемента</p>
                     </div>
                     <div class="actual-item">
-                        <time class="date-time font" datetime="2025-01-30">30 января 2025г</time>
-                        <p class="date-text font">здесь будет текст о выводе птицы и актуальной информацией <br>
-                            здесь будет текст о выводе птицы и актуальной информацией <br>
-                            здесь будет текст о выводе птицы и актуальной информацией
-                        </p>
+                        <time class="date-time font" datetime="2025-03-05">5 марта 2025 г.</time>
+                        <p class="date-text font">Текст третьего элемента</p>
                     </div>
                 </div>
+
+                <div class="actual-edit">
+                    <h3>Редактирование актуальной информации</h3>
+                    <form id="editForm">
+                        <label for="newBlockDate">Дата нового элемента:</label>
+                        <input type="datetime-local" id="newBlockDate" name="newBlockDate" value="2025-01-30T00:00">
+                        <textarea id="newBlockText" name="newBlockText"
+                            placeholder="Текст нового элемента..."></textarea>
+                        <button type="submit">Сохранить изменения</button>
+                    </form>
+                </div>
+                <script src="script/actualEdit.js"></script>
             </section>
             <article class="about">
                 <h2 class="caption">Чем занимается наше хозяйство</h2>
@@ -96,10 +99,9 @@
                             <img class="image-chicken" src="image-chicken/photo_1.jpg" alt="">
                             <img class="image-chicken" src="image-chicken/photo_2.jpg" alt="">
                             <img class="image-chicken" src="image-chicken/photo_3.jpg" alt="">
-                            <img class="image-chicken" src="image-chicken/photo_6.jpg" alt="">
-                            <img class="image-chicken" src="image-chicken/photo_9.jpg" alt="">
-                            <img class="image-chicken" src="image-chicken/photo_11.jpg" alt="">
                             <img class="image-chicken" src="image-chicken/photo_4.jpg" alt="">
+                            <img class="image-chicken" src="image-chicken/photo_5.jpg" alt="">
+                            <img class="image-chicken" src="image-chicken/photo_11.jpg" alt="">
                         </div>
                         <span class="closed-button">×</span>
                     </div>
@@ -191,7 +193,7 @@
                                 птицы(отопление, охлаждение, вентиляции, осушение,
                                 систем поддержания температуры и контроля влажности).<br>
                                 Улучшаем системы поения и кормления птицы. Работаем над вариантами утилизации помёта без
-                                вреда для
+                                вреда Для
                                 природы.
                             </p>
                         </div>
