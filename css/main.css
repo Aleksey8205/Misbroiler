@@ -241,7 +241,7 @@ body {
 
 .about-item-list.animate-bottom {
     transform: translateY(100%);
-    animation: slideUp 3s ease-in-out both;
+    animation: slideUp 2s ease-in-out both;
 }
 
 @keyframes slideInFromRight {
@@ -255,7 +255,7 @@ body {
 }
 
 @keyframes slideUp {
-    from { transform: translateY(10%); opacity: 0; }
+    from { transform: translateY(50%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
