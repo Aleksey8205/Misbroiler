@@ -124,9 +124,9 @@ function updateResults(bagsOfFeedA, totalKilogramsA, feedNameA, bagsOfFeedB, tot
         <div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(2)} кг (количество мешков: ${bagsOfFeedTotal})</div>
     `;
 
-    document.querySelectorAll('.text-calc')[0].innerText = `${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(2)}кг`;
-    document.querySelectorAll('.text-calc')[1].innerText = `${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(2)}кг`;
-    document.querySelectorAll('.text-calc')[2].innerText = `${bagsOfFeedC} мешков ${totalKilogramsC.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[0].innerText = `Старт ${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[1].innerText = `Рост ${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[2].innerText = `Финиш ${bagsOfFeedC} мешков ${totalKilogramsC.toFixed(2)}кг`;
 }
 
 // Функция для создания блоков с результатами

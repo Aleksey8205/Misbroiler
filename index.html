@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>МИС Бройлер</title>
+    <title>МИСБРОЙЛЕР</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <link rel="icon" href="svg/Yuri.svg">
 </head>
-
 <body>
     <header id="header" class="header">
         <a class="logo-link" href="about.html">
@@ -26,11 +25,11 @@
                         onclick="document.getElementById('menu-toggle').checked = false;">О нас</a></li>
                 <li class="item-list linked"><a class="linked" href="#calc"
                         onclick="document.getElementById('menu-toggle').checked = false;">Калькулятор</a></li>
-                <li class="item-list linked"><a class="linked" href="#0"
+                <li class="item-list linked"><a class="linked" href="production.html"
                         onclick="document.getElementById('menu-toggle').checked = false;">Продукция</a></li>
                 <li class="item-list linked"><a class="linked" href="#slider"
                         onclick="document.getElementById('menu-toggle').checked = false;">комбикорм</a></li>
-                <li class="item-list linked"><a class="linked" href="#0"
+                <li class="item-list linked"><a class="linked" href="galeryAndVideo.html"
                         onclick="document.getElementById('menu-toggle').checked = false;">Видео</a></li>
             </ul>
             <span class="close-button" onclick="document.getElementById('menu-toggle').checked = false;">×</span>
@@ -54,22 +53,13 @@
                 <div class="actual-info">
                     <div class="actual-item">
                         <time class="date-time font" datetime="2025-01-30">30 января 2025 г.</time>
-                        <p class="date-text font">Текст первого элемента</p>
+                        <p class="date-text font">Актуальная информация</p>
                     </div>
-                    <div class="actual-item">
-                        <time class="date-time font" datetime="2025-02-15">15 февраля 2025 г.</time>
-                        <p class="date-text font">Текст второго элемента</p>
-                    </div>
-                    <div class="actual-item">
-                        <time class="date-time font" datetime="2025-03-05">5 марта 2025 г.</time>
-                        <p class="date-text font">Текст третьего элемента</p>
-                    </div>
-                </div>
             </section>
             <article class="about">
                 <h2 class="caption">Чем занимается наше хозяйство</h2>
                 <section class="section">
-                    <button data-item="item1" data-direction="left" class="about-item-list item1">
+                    <div data-item="item1" data-direction="left" class="about-item-list item1">
                         <div class="card">
                             <h3 class="heading">Цыплята</h3>
                             <div class="card-image-right">
@@ -80,8 +70,9 @@
                                 производителей. Выращиваем цыплят без применения химии в своем хозяйстве
                                 до убоя.
                             </p>
+                                <button class="carousel-btn">Подробнее</button>
                         </div>
-                    </button>
+                    </div>
                     <div class="item-modal" id="item1">
                         <div class="image-grid">
                             <img class="image-chicken" src="image-chicken/photo_1.jpg" alt="">
@@ -93,7 +84,7 @@
                         </div>
                         <span class="closed-button">×</span>
                     </div>
-                    <button data-item="item2" data-direction="right" class="about-item-list item2">
+                    <div data-item="item2" data-direction="right" class="about-item-list item2">
                         <div class="card">
                             <h3 class="heading">Тушки домашнего бройлера</h3>
                             <div class="card-image-left">
@@ -102,26 +93,21 @@
                             <p class="text-item left"> Реализуем экологически чистые гипоаллергенные тушки
                                 домашнего бройлера высокого качества и внешнего вида. Вес от 2.2 кг до 3 кг.
                             </p>
+                                <button class="carousel-btn">Подробнее</button>
                         </div>
-                    </button>
+                    </div>
                     <div class="item-modal" id="item2">
-                        <div>
-                            <input class="checkbox-image" id="image-modal1" type="checkbox">
-                            <label for="image-modal1">
-                                <img class="image-modal" src="image/allbroil.jpg" alt="">
-                            </label>
-                            <input class="checkbox-image" id="image-modal2" type="checkbox">
-                            <label for="image-modal2">
-                                <img class="image-modal" src="image/two-broiler.png" alt="">
-                            </label>
-                            <input class="checkbox-image" id="image-modal3" type="checkbox">
-                            <label for="image-modal3">
-                                <img class="image-modal" src="image/two-broiler2.png" alt="">
-                            </label>
+                        <div class="image-grid">
+                            <img class="image-chicken" src="image/photo_1.jpg" alt="">
+                            <img class="image-chicken" src="image/photo_2.jpg" alt="">
+                            <img class="image-chicken" src="image/photo_3.jpg" alt="">
+                            <img class="image-chicken" src="image/photo_4.jpg" alt="">
+                            <img class="image-chicken" src="image/photo_5.jpg" alt="">
+                            <img class="image-chicken" src="image/photo_6.jpg" alt="">
                         </div>
                         <span class="closed-button">×</span>
                     </div>
-                    <button onclick="location.href='#slider'" data-direction="bottom" class="about-item-list item3">
+                    <div onclick="location.href='#slider'" data-direction="bottom" class="about-item-list item3">
                         <div class="card">
                             <h3 class="heading">Мегакорм</h3>
                             <p class="text-item center"> Являемся официальным дистрибьютором
@@ -131,12 +117,13 @@
                                 В наличии есть всегда комбикорм для бройлеров и кур-несушек.
                                 Корма для других сельскохозяйственных животных под заказ от 1 до 4 дней.
                             </p>
+                            <button class="carousel-btn">Подробнее</button>
                         </div>
                         <div class="flex">
                             <img class="image" src="image/megakorm.png" alt="">
                         </div>
-                    </button>
-                    <button data-item="item4" data-direction="left" class="about-item-list item4">
+                    </div>
+                    <div data-item="item4" data-direction="left" class="about-item-list item4">
                         <div class="card">
                             <h3 class="heading">Домашеее яйцо</h3>
                             <div class="card-image-right">
@@ -147,15 +134,16 @@
                                 Лекарственные
                                 препараты не применяем.
                             </p>
+                            <button class="carousel-btn">Подробнее</button>
                         </div>
-                    </button>
+                    </div>
                     <div class="item-modal" id="item4">
-                        <section>
+                        <div>
                             <p>Здесь может быть информация о цыплятах.</p>
                             <span class="closed-button">×</span>
-                        </section>
+                        </div>
                     </div>
-                    <button data-item="item5" data-direction="right" class="about-item-list item5">
+                    <div data-item="item5" data-direction="right" class="about-item-list item5">
                         <div class="card">
                             <h3 class="heading">Куры несушки</h3>
                             <div class="card-image-left">
@@ -166,14 +154,15 @@
                                 Средний показатель 300 яиц в год массой до 70г, часто двухжелтковое.
                                 В зависимости от подвида имеет декоративный цвет скорлупы.
                             </p>
+                            <button class="carousel-btn">Подробнее</button>
                         </div>
-                    </button>
+                    </div>
                     <div class="item-modal" id="item5">
                         <p>Здесь может быть информация о цыплятах.</p>
                         <span class="closed-button">×</span>
 
                     </div>
-                    <button onclick="location.href='about.html'" data-direction="bottom" class="about-item-list item6 ">
+                    <div onclick="location.href='about.html'" data-direction="bottom" class="about-item-list item6 ">
                         <div class="card">
                             <h3 class="heading">Наши наработки</h3>
                             <p class="text-item center">Творчески подходим к доработкам всякого рода устройств для
@@ -184,13 +173,14 @@
                                 вреда Для
                                 природы.
                             </p>
+                            <button class="carousel-btn">Подробнее</button>
                         </div>
                         <img class="image" src="svg/idea-box.svg" alt="">
-                    </button>
+                    </div>
                     <div class="overlay"></div>
                 </section>
             </article>
-            <article class="megakorm wow">
+            <article class="megakorm">
                 <section class="slider-wrapper">
                     <div class="slider" id="slider">
                         <div class="item"> <!-- 1 животное-->
@@ -3013,10 +3003,14 @@
                             <img class="image-calculator" src="image/broiler-calculator.png">
                         </div>
                     </div> <!-- КОНЕЦ калькулятора-->
+                </div>
             </section>
         </main>
-        <img data-item="item6" data-direction="bottom" class="about-item-list animate-bottom image-megamiks"
-            src="image/Megamiks.jpg" alt="">
+        <div data-item="item6" data-direction="bottom" class="about-item-list animate-bottom image-megamiks">
+            <p class="text-megamiks">Изготовлен из отборных зерновых продуктов с высокими показателями
+                питательности. Содержит фитобиотики для повышения иммунитета и ферменты для
+                пищеварения.</p>
+        </div>
     </div>
     <footer class="footer-wrapper">
         <div>
@@ -3024,9 +3018,9 @@
                 <li class="nav-list"><a class="link" href="index.html">Главная</a></li>
                 <li class="nav-list"><a class="link" href="about.html">О нас</a></li>
                 <li class="nav-list"><a class="link" href="#calc">Калькулятор</a></li>
-                <li class="nav-list"><a class="link" href="#0">Продукция</a></li>
+                <li class="nav-list"><a class="link" href="production.html">Продукция</a></li>
                 <li class="nav-list"><a class="link" href="#slider">комбикорм</a></li>
-                <li class="nav-list"><a class="link" href="#0">Видео</a></li>
+                <li class="nav-list"><a class="link" href="galeryAndVideo.html">Видео</a></li>
             </ul>
         </div>
         <address class="up-col">
@@ -3036,11 +3030,10 @@
             </a>
             <div class="social-icons">
                 <a href="https://wa.me/+79169927150"><img class="whatsapp-icon" src="image/whattsapp.svg" alt=""></a>
-                <a href="https://t.me/+79169927150"><img class="telegram-icon" src="image/telegram-icon.svg" alt=""
-                        srcset=""></a>
+                <a href="https://t.me/+79169927150"><img class="telegram-icon" src="image/telegram-icon.svg" alt=""></a>
             </div>
             <ul class="address">
-                <p class="contact-text">Контакты</p>
+                <li class="contact-text">Контакты</li>
                 <li class="address-list"><a class="link link-tel" href="tel:+79169927150">8 (916) 992-71-50</a></li>
                 <li class="address-list"><a class="link link-tel" href="tel:+79774578836">8 (977) 457-88-36</a></li>
                 <li class="address-list"><a class="link link-nav" href="https://yandex.ru/maps/-/CHAy7AIX">Мы на

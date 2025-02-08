@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="svg/Yuri.svg">
     <title>О нас</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
@@ -27,11 +28,11 @@
                         onclick="document.getElementById('menu-toggle').checked = false;">О нас</a></li>
                 <li class="item-list linked"><a class="linked" href="index.html#calc"
                         onclick="document.getElementById('menu-toggle').checked = false;">Калькулятор</a></li>
-                <li class="item-list linked"><a class="linked" href="#0"
+                <li class="item-list linked"><a class="linked" href="production.html"
                         onclick="document.getElementById('menu-toggle').checked = false;">Продукция</a></li>
                 <li class="item-list linked"><a class="linked" href="index.html#slider"
                         onclick="document.getElementById('menu-toggle').checked = false;">комбикорм</a></li>
-                <li class="item-list linked"><a class="linked" href="#0"
+                <li class="item-list linked"><a class="linked" href="galeryAndVideo.html"
                         onclick="document.getElementById('menu-toggle').checked = false;">Видео</a></li>
             </ul>
             <span class="close-button" onclick="document.getElementById('menu-toggle').checked = false;">×</span>
@@ -39,7 +40,7 @@
                 <ul class="nav-link">
                     <li class="item-list linked adres"><a class="linked link-nav"
                             href="https://yandex.ru/maps/-/CHAy7AIX">Мы на карте</a></li>
-                            <li class="item-list linked"><a class="linked link-avito" href="">Мы на Авито</a></li>
+                    <li class="item-list linked"><a class="linked link-avito" href="">Мы на Авито</a></li>
                     <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
                     </li>
                     <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
@@ -79,73 +80,64 @@
                     </ul>
                 </div>
                 <h2 class="caption">Фотографии технологического процесса</h2>
-                <div class=" button-center">
-                <button class="toggle-btn">Развернуть / Свернуть
-                    <img class="down_arrow" src="svg/down_arrow.svg" alt="">
-                </button>
-            </div>
-    <div class="collapse-content hidden">
-                <div class="about-items">
-                    <div class="description">
-                        <img class="images" src="image/punkt2.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Используем инкубационное яйцо лучших отечественных и импортных
-                            производителей.</p>
+                    <div class="about-items">
+                        <div class="description">
+                            <img class="images" src="image/punkt2.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Используем инкубационное яйцо лучших отечественных и импортных
+                                производителей.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt1.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Инкубацию производим на современном оборудовании где
+                                контроллируется
+                                температура не только воздуха в инкубаторе, но и температура яйца.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt4.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">С первых суток цыплята содержатся в профессиональных брудерах.
+                            </p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt5.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Возраст птицы 21 день.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt6.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Возраст птицы 30 дней.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt7.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Возраст птицы 38 дней.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt8.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Возраст птицы 45 дней.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt9.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Готовая продукция на 38-45 день.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt10.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Готовая продукция на 38-45 день.</p>
+                        </div>
+                        <div class="description">
+                            <img class="images" src="image/punkt11.jpg" alt="" onclick="openModalImg(this)">
+                            <p class="text-description">Готовая продукция на 38-45 день.</p>
+                        </div>
+                        <div id="modal" class="modal-image">
+                            <img class="modal-content" id="modalImg">
+                            <span class="closeModal" onclick="closeModal()"></span>
+                        </div>
                     </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt1.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Инкубацию производим на современном оборудовании где контроллируется
-                            температура не только воздуха в инкубаторе, но и температура яйца.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt4.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">С первых суток цыплята содержатся в профессиональных брудерах.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt5.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Возраст птицы 21 день.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt6.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Возраст птицы 30 дней.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt7.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Возраст птицы 38 дней.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt8.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Возраст птицы 45 дней.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt9.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Готовая продукция на 38-45 день.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt10.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Готовая продукция на 38-45 день.</p>
-                    </div>
-                    <div class="description">
-                        <img class="images" src="image/punkt11.jpg" alt="" onclick="openModalImg(this)">
-                        <p class="text-description">Готовая продукция на 38-45 день.</p>
-                    </div>
-                    <div id="modal" class="modal-image">
-                        <img class="modal-content" id="modalImg">
-                        <span class="closeModal" onclick="closeModal()"></span>
-                    </div>
+                <h2 class="caption">Фото помещения для выращивания бройлера.</h2>
+                <div class="item-hangar">
+                    <img class="image-hangar" src="image/vis-1.jpg" alt="">
+                    <img class="image-hangar" src="image/vis-up.jpg" alt="">
+                    <img class="image-hangar" src="image/vis-2.jpg" alt="">
+                    <img class="image-hangar" src="image/vis-3.jpg" alt="">
                 </div>
-        </div>
-    <h2 class="caption">Фото помещения для выращивания бройлера.</h2>
-    <div class="item-hangar">
-        <img class="image-hangar" src="image/vis-1.jpg" alt="">
-        <img class="image-hangar" src="image/vis-up.jpg" alt="">
-        <img class="image-hangar" src="image/vis-2.jpg" alt="">
-        <img class="image-hangar" src="image/vis-3.jpg" alt="">
-    </div>
-        <p class="text">Если вы хотите увидеть какие то этапы постройки посмотрите видео о постройке.</p>
-    </div>
-    <h2 class="caption">Наш блог</h2>
-    <div>
-
+                <p class="text">Если вы хотите увидеть этапы постройки, посмотрите в нашем разделе <button class="carousel-btn" onclick="location.href='galeryAndVideo.html'">видео</button></p>
     </div>
     </article>
     </main>
@@ -156,9 +148,9 @@
                 <li class="nav-list"><a class="link" href="index.html">Главная</a></li>
                 <li class="nav-list"><a class="link" href="about.html">О нас</a></li>
                 <li class="nav-list"><a class="link" href="index.html#calc">Калькулятор</a></li>
-                <li class="nav-list"><a class="link" href="#0">Продукция</a></li>
+                <li class="nav-list"><a class="link" href="production.html">Продукция</a></li>
                 <li class="nav-list"><a class="link" href="index.html#slider">комбикорм</a></li>
-                <li class="nav-list"><a class="link" href="#0">Видео</a></li>
+                <li class="nav-list"><a class="link" href="galeryAndVideo.html">Видео</a></li>
             </ul>
         </div>
         <address class="up-col">
