@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МИСБРОЙЛЕР</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="icon" href="svg/Yuri.svg">
+</head>
+<body>
+    <header id="header" class="header">
+        <a class="logo-link" href="about.html">
+            <img class="logo-gif" src="image/chicken-gif.gif" alt="">
+            <img class="logo" src="image/mis-logo.svg" alt="Логотип"></a>
+        <input type="checkbox" class="menu-checkbox" id="menu-toggle">
+        <label for="menu-toggle">
+            <span class="menu-icon"></span>
+        </label>
+        <nav class="menu">
+            <ul class="navigation">
+                <li class="item-list linked"><a class="linked" href="index.html"
+                        onclick="document.getElementById('menu-toggle').checked = false;">Главная</a></li>
+                <li class="item-list linked"><a class="linked" href="about.html"
+                        onclick="document.getElementById('menu-toggle').checked = false;">О нас</a></li>
+                <li class="item-list linked"><a class="linked" href="index.html#calc"
+                        onclick="document.getElementById('menu-toggle').checked = false;">Калькулятор</a></li>
+                <li class="item-list linked"><a class="linked" href="production.html"
+                        onclick="document.getElementById('menu-toggle').checked = false;">Продукция</a></li>
+                <li class="item-list linked"><a class="linked" href="index.html#slider"
+                        onclick="document.getElementById('menu-toggle').checked = false;">комбикорм</a></li>
+                <li class="item-list linked"><a class="linked" href="galeryAndVideo.html"
+                        onclick="document.getElementById('menu-toggle').checked = false;">Видео</a></li>
+            </ul>
+            <span class="close-button" onclick="document.getElementById('menu-toggle').checked = false;">×</span>
+            <address>
+                <ul class="nav-link">
+                    <li class="item-list linked "><a class="linked link-nav" href="https://yandex.ru/maps/-/CHAy7AIX">Мы
+                            на карте</a></li>
+                    <li class="item-list linked"><a class="linked link-avito" href="">Мы на Авито</a></li>
+                    <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
+                    </li>
+                    <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
+                    </li>
+                </ul>
+            </address>
+        </nav>
+    </header>
+    <div class="content">
+        <h2 class="caption">Тушки домашнего бройлера</h2>
+        <div class="about-items">
+            <img class="images" loading="lazy" src="production-image/photo_1.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_2.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_3.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_4.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_5.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_6.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_8.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_9.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_10.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_11.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_13.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_14.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_15.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_16.jpg" alt="" onclick="openModalImg(this)">
+            <img class="images" loading="lazy" src="production-image/photo_17.jpg" alt="" onclick="openModalImg(this)">
+        </div>
+        <div id="modal" class="modal-image">
+            <img class="modal-content" id="modalImg">
+            <span class="closeModal" onclick="closeModal()"></span>
+        </div>
+    </div>
+
+    <footer class="footer-wrapper">
+        <div>
+            <ul class="nav">
+                <li class="nav-list"><a class="link" href="index.html">Главная</a></li>
+                <li class="nav-list"><a class="link" href="about.html">О нас</a></li>
+                <li class="nav-list"><a class="link" href="index.html#calc">Калькулятор</a></li>
+                <li class="nav-list"><a class="link" href="production.html">Продукция</a></li>
+                <li class="nav-list"><a class="link" href="index.html#slider">комбикорм</a></li>
+                <li class="nav-list"><a class="link" href="galeryAndVideo.html">Видео</a></li>
+            </ul>
+        </div>
+        <address class="up-col">
+            <a class="logo-link" href="about.html">
+                <img class="logo-gif" src="image/chicken-gif.gif" alt="">
+                <img class="logo" src="image/mis-logo.svg" alt="Логотип">
+            </a>
+            <div class="social-icons">
+                <a href="https://wa.me/+79169927150"><img class="whatsapp-icon" src="image/whattsapp.svg" alt=""></a>
+                <a href="https://t.me/+79169927150"><img class="telegram-icon" src="image/telegram-icon.svg" alt=""></a>
+            </div>
+            <ul class="address">
+                <li class="contact-text">Контакты</li>
+                <li class="address-list"><a class="link link-tel" href="tel:+79169927150">8 (916) 992-71-50</a></li>
+                <li class="address-list"><a class="link link-tel" href="tel:+79774578836">8 (977) 457-88-36</a></li>
+                <li class="address-list"><a class="link link-nav" href="https://yandex.ru/maps/-/CHAy7AIX">Мы на
+                        карте</a></li>
+            </ul>
+        </address>
+    </footer>
+    <label for="menu-toggle" style="width: 1px;">
+        <img class="menu-sticky" src="image/menu_w88x7uezfxkn.svg" alt="">
+    </label>
+    <script src="script/script.js"></script>
+    <script src="script/slider.js"></script>
+</body>
+
+</html>

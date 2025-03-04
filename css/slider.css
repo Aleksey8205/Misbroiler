@@ -1,0 +1,184 @@
+@font-face {
+    font-family: opensansRegular;
+    src: url("../font/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: opensansBold;
+    src: url("../font/OpenSans-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.slider_3 {
+    position: relative;
+}
+
+.item_slider {
+    height: 700px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.item_slider_1 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text_background {
+    color: #fff;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    justify-items: center;
+}
+
+.caption_slider {
+    font-family: opensansBold;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.text_slider {
+    width: 70%;
+    font-family: opensansRegular;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button_next_prev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prevs-button {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: unset;
+}
+
+.nexts-button {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: none;
+    background-color: unset;
+}
+
+.image-1 {
+    background-image: url(../slider-hangar/slide-1.jpg);
+}
+
+.image-2 {
+    background-image: url(../slider-hangar/slide-2.jpg);
+}
+
+.image-3 {
+    background-image: url(../slider-hangar/slide-3.jpg);
+}
+
+.image-4 {
+    background-image: url(../slider-hangar/slide-4.jpg);
+}
+
+.image-5 {
+    background-image: url(../slider-hangar/slide-5.jpg);
+}
+
+.image-6 {
+    background-image: url(../slider-hangar/slide-6.jpg);
+}
+
+.image-7 {
+    background-image: url(../slider-hangar/slide-7.jpg);
+}
+
+.image-8 {
+    background-image: url(../slider-hangar/slide-8.jpg);
+}
+
+.image-9 {
+    background-image: url(../slider-hangar/slide-9.jpg);
+}
+
+.image-10 {
+    background-image: url(../slider-hangar/slide-10.jpg);
+}
+
+.image-11 {
+    background-image: url(../slider-hangar/slide-11.jpg);
+}
+
+.image-12 {
+    background-image: url(../slider-hangar/slide-12.jpg);
+}
+
+.image-13 {
+    background-image: url(../slider-hangar/slide-13.jpg);
+}
+
+.image-14 {
+    background-image: url(../slider-hangar/slide-14.jpg);
+}
+
+.image-15 {
+    background-image: url(../slider-hangar/slide-15.jpg);
+}
+
+.image-16 {
+    background-image: url(../slider-hangar/slide-16.jpg);
+}
+
+.image-17 {
+    background-image: url(../slider-hangar/slide-17.jpg);
+}
+
+.image-18 {
+    background-image: url(../slider-hangar/slide-18.jpg);
+}
+
+.image-19 {
+    background-image: url(../slider-hangar/slide-19.jpg);
+}
+
+.image-20 {
+    background-image: url(../slider-hangar/slide-20.jpg);
+}
+
+.image-21 {
+    background-image: url(../slider-hangar/slide-21.jpg);
+}
+
+.image-22 {
+    background-image: url(../slider-hangar/slide-22.jpg);
+}
+
+.image-23 {
+    background-image: url(../slider-hangar/slide-23.jpg);
+}
+
+.image-24 {
+    background-image: url(../slider-hangar/slide-24.jpg);
+}
+
+.image-25 {
+    background-image: url(../slider-hangar/slide-25.jpg);
+}
+
+.image-26 {
+    background-image: url(../slider-hangar/slide-26.jpg);
+}
+
+.image-27 {
+    background-image: url(../slider-hangar/slide-27.jpg);
+}
