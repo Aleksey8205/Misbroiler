@@ -80,10 +80,11 @@ body {
 .link-avito:before {
     content: '';
     display: inline-block;
-    width: 25px;
+    width: 35px;
     height: 25px;
     margin-right: 5px;
     background-image: url(../svg/avito.svg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
@@ -173,7 +174,6 @@ body {
 }
 
 .actual-item {
-    width: 90%;
     min-height: 100px;
     padding: 20px;
     border: 1px solid black;

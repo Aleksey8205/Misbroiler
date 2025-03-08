@@ -29,34 +29,34 @@ const animalData = {
         C: { amount: 2900}
     },
     'animal2': {
-        A: { amount: 6000},
-        B: { amount: 1800}
+        A: { amount: 0},
+        B: { amount: 0}
     },
     'animal3': {
-        A: { amount: 5700 }
+        A: { amount: 0 }
     },
     'animal4': {
         A: { amount: 0},
     },
     'animal5': {
-        A: { amount: 8200},
-        B: { amount: 8000},
-        C: { amount: 2900}
+        A: { amount: 0},
+        B: { amount: 0},
+        C: { amount: 0}
     },
     'animal6': {
-        A: { amount: 6020},
-        B: { amount: 1800},
-        C: { amount: 3000}
+        A: { amount: 0},
+        B: { amount: 0},
+        C: { amount: 0}
     },
     'animal7': {
-        A: { amount: 5700},
-        B: { amount: 1700},
-        C: { amount: 2900}
+        A: { amount: 0},
+        B: { amount: 0},
+        C: { amount: 0}
     },
     'animal8': {
-        A: { amount: 6020},
-        B: { amount: 1800},
-        C: { amount: 3000},
+        A: { amount: 0},
+        B: { amount: 0},
+        C: { amount: 0},
     }
 };
 
