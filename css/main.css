@@ -640,12 +640,15 @@ input[type='number'] {
 }
 
 .text-megamiks {
-     color: #ffffff;
-    width: 200px;
-    font-family: opr;
+    color: #ffffff;
+    width: 250px;
+    font-family: opensansRegular;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
 }
 
 .footer-wrapper {
