@@ -124,26 +124,9 @@ function updateResults(bagsOfFeedA, totalKilogramsA, feedNameA, bagsOfFeedB, tot
         <div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(2)} кг (количество мешков: ${bagsOfFeedTotal})</div>
     `;
 
-    document.querySelectorAll('.text-calc')[0].innerText = `Старт ${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(2)}кг`;
-    document.querySelectorAll('.text-calc')[1].innerText = `Рост ${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(2)}кг`;
-    document.querySelectorAll('.text-calc')[2].innerText = `Финиш ${bagsOfFeedC} мешков ${totalKilogramsC.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[0].innerText = `Старт 0-14 дней ${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[1].innerText = `Рост 15-28 дней ${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[2].innerText = `Финиш  старше 29 дней ${bagsOfFeedC} мешков ${totalKilogramsC.toFixed(2)}кг`;
 }
 
-// Функция для создания блоков с результатами
-function updateResultBlocks(animalType) {
-    const resultContainer = document.getElementById('result');
-    const data = animalData[animalType];
-    const stages = Object.keys(data);
 
-    // Удаляем все существующие элементы .slider__plus__calculate
-    Array.from(resultContainer.querySelectorAll('.slider__plus__calculate')).forEach(el => el.remove());
-
-    // Создаём новые элементы в зависимости от количества стадий
-    stages.forEach((stage, index) => {
-        const stageDiv = document.createElement('div');
-        stageDiv.classList.add('slider__plus__calculate');
-        stageDiv.style.backgroundColor = animalColors[animalType];
-        stageDiv.innerHTML = `<p class="text-calc">${[animalType][index]}</p>`;
-        resultContainer.appendChild(stageDiv);
-    });
-}
