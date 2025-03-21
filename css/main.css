@@ -392,6 +392,10 @@ body {
     width: calc((100% / 3) - 5px);
 }
 
+.chicken__eggz__big__img {
+    width: 100%;
+    border-radius: 15px;
+}
 
 .overlay {
     display: none;
