@@ -121,12 +121,12 @@ function calculateFeed() {
 // Функция для обновления результатов
 function updateResults(bagsOfFeedA, totalKilogramsA, feedNameA, bagsOfFeedB, totalKilogramsB, feedNameB, bagsOfFeedC, totalKilogramsC, feedNameC, bagsOfFeedTotal, totalKilogramsTotal) {
     document.getElementById('itog').innerHTML = `
-        <div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(2)} кг (количество мешков: ${bagsOfFeedTotal})</div>
+        <div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>
     `;
 
-    document.querySelectorAll('.text-calc')[0].innerText = `Старт 0-14 дней ${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(2)}кг`;
-    document.querySelectorAll('.text-calc')[1].innerText = `Рост 15-28 дней ${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(2)}кг`;
-    document.querySelectorAll('.text-calc')[2].innerText = `Финиш  старше 29 дней ${bagsOfFeedC} мешков ${totalKilogramsC.toFixed(2)}кг`;
+    document.querySelectorAll('.text-calc')[0].innerText = `Старт 0-14 дней ${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(1)}кг`;
+    document.querySelectorAll('.text-calc')[1].innerText = `Рост 15-28 дней ${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(1)}кг`;
+    document.querySelectorAll('.text-calc')[2].innerText = `Финиш  старше 29 дней ${bagsOfFeedC} мешков ${totalKilogramsC.toFixed(1)}кг`;
 }
 
 

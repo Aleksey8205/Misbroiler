@@ -596,6 +596,7 @@ input[type='number'] {
     width: 162px;
     height: 133px;
     align-content: center;
+    -webkit-align-content: center;
     animation-name: plus-bubble-slider-calculate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
