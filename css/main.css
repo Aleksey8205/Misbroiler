@@ -493,6 +493,34 @@ input[type='number'] {
 .animals-item-list {
     width: 65px;
     margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(224, 222, 222);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: opensansRegular;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.animals-item-list:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
 
 .input-head {
@@ -514,7 +542,7 @@ input[type='number'] {
     padding: 5px;
     border-radius: 30%;
     position: relative;
-
+    cursor: pointer;
 }
 
 .animals:checked~img.animal-image {
@@ -555,7 +583,7 @@ input[type='number'] {
     font-weight: bold;
     font-style: normal;
     width: 162px;
-    color: #30529f;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -581,6 +609,14 @@ input[type='number'] {
     z-index: -1;
 }
 
+.itog-4 {
+    position: relative;
+    bottom: 160px;
+    left: 250px;
+    z-index: -1;
+}
+
+
 .image-calculator {
     position: relative;
     width: 300px;
@@ -594,8 +630,9 @@ input[type='number'] {
 }
 
 .slider__plus__calculate {
-    width: 162px;
-    height: 133px;
+    transform: scale(1.3);
+    width: 192px;
+    height: 163px;
     align-content: center;
     -webkit-align-content: center;
     animation-name: plus-bubble-slider-calculate;

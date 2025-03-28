@@ -2899,107 +2899,99 @@
                         <div class="calculator-left"> <!-- левая сторона калькулятора-->
                             <p class="text">С помощью нашего калькулятора вы можете посчитать
                                 сколько корма понадобится
-                                для вашего поголовья. Рассчет для других с/х животных находится в разработке.
-                                Введите количество голов бройлера и получите расчет кратный 1 мешку.<br>
+                                для вашего поголовья. Выберите с/х животное для рассчета.
+                                Введите количество голов  и получите расчет кратный 1 мешку.<br>
                             </p>
                             <div class="animal-container"><!--контейнер животных-->
                                 <!--одно животное-->
-                                <div class="animals-item-list">
-                                    <label for="animal-1">
-                                        <input id="animal-1" class="animals" type="radio" name="animal" value="animal1"
+                                <div class="animals-item-list" >
+                                    <label for="animal1">
+                                        <input id="animal1" class="animals" type="radio" name="animal" value="animal1"
                                             checked hidden>
-                                        <img src="image/broiler.svg" alt="Animal 1" class="animal-image"
+                                        <img src="image/broiler.svg" alt="Animal 1" class="animal-image" 
                                             onclick="selectAnimal('animal1')">
+                                            <span class="tooltip-text">Бройлер</span>
                                     </label>
                                 </div>
-                                <!--второе животное
+                                
                             <div class="animals-item-list">
-                                    <label for="animal-2">
-                                        <input id="animal-2" class="animals" type="radio" name="animal" value="animal2"
+                                    <label for="animal2">
+                                        <input id="animal2" class="animals" type="radio" name="animal" value="animal2" 
                                             hidden>
-                                        <img src="image/rabbit.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/rabbit.svg" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal2')">
+                                            <span class="tooltip-text">Кролик</span>
                                     </label>
                                 </div>
                                 
                                 <div class="animals-item-list">
-                                    <label for="animal-3">
-                                        <input id="animal-3" type="radio" class="animals" name="animal" value="animal3"
+                                    <label for="animal3">
+                                        <input id="animal3" type="radio" class="animals" name="animal" value="animal3" 
                                             hidden>
-                                        <img src="image/pig.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/pig.png" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal3')">
+                                            <span class="tooltip-text">Свинья</span>
                                     </label>
                                 </div>
                                 
                                 <div class="animals-item-list">
-                                    <label for="animal-4">
-                                        <input id="animal-4" type="radio" class="animals" name="animal" value="animal4"
+                                    <label for="animal4">
+                                        <input id="animal4" type="radio" class="animals" name="animal" value="animal4"
                                             hidden>
-                                        <img src="image/cow.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/cow.svg" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal4')">
+                                            <span class="tooltip-text">Корова</span>
                                     </label>
                                 </div>
                                 
                                 <div class="animals-item-list">
-                                    <label for="animal-5">
-                                        <input id="animal-5" type="radio" class="animals" name="animal" value="animal5"
+                                    <label for="animal5">
+                                        <input id="animal5" type="radio" class="animals" name="animal" value="animal5"
                                             hidden>
-                                        <img src="image/chiken-eggz.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/chiken-eggz.svg" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal5')">
+                                            <span class="tooltip-text">Несушка</span>
                                     </label>
                                 </div>
-                                
                                 <div class="animals-item-list">
-                                    <label for="animal-6">
-                                        <input id="animal-6" type="radio" class="animals" name="animal" value="animal6"
+                                    <label for="animal6">
+                                        <input id="animal6" type="radio" class="animals" name="animal" value="animal6"
                                             hidden>
-                                        <img src="image/perepel.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/perepel.svg" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal6')">
+                                            <span class="tooltip-text">Перепел</span>
                                     </label>
                                 </div>
                                 
                                 <div class="animals-item-list">
-                                    <label for="animal-7">
-                                        <input id="animal-7" type="radio" class="animals" name="animal" value="animal7"
+                                    <label for="animal7">
+                                        <input id="animal7" type="radio" class="animals" name="animal" value="animal7"
                                             hidden>
-                                        <img src="image/indeika.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/indeika.svg" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal7')">
+                                            <span class="tooltip-text">Индейка</span>
                                     </label>
                                 </div>
                                 
                                 <div class="animals-item-list">
-                                    <label for="animal-8">
-                                        <input id="animal-8" type="radio" class="animals" name="animal" value="animal8"
+                                    <label for="animal8">
+                                        <input id="animal8" type="radio" class="animals" name="animal" value="animal8"
                                             hidden>
-                                        <img src="image/duck.svg" alt="Animal 2" class="animal-image"
+                                        <img src="image/duck.svg" alt="Animal 2" class="animal-image" 
                                             onclick="selectAnimal('animal8')">
+                                            <span class="tooltip-text">Утка</span>
                                     </label>
-                                </div> -->
+                                </div>
                             </div><!--контейнер животных-->
                             <label for="heads"></label>
                             <input placeholder="Введите кол-во голов" class="input-head" type="number" id="heads"
-                                min="1">
+                                min="1" >
                             <div id="itog">
                                 <div class="itog-all">Итого: 0 кг (колличество мешков:)</div>
                             </div>
                         </div><!-- левая сторона калькулятора конец-->
                         <div class="calculator-right"><!-- правая сторона калькулятора-->
                             <div class="results" id="result">
-                                <div class="itog-first">
-                                    <div class="slider__plus__calculate" style="background-color: rgb(153, 225, 239);">
-                                        <p class="text-calc">Старт 0-14 дней мешков 0кг</p>
-                                    </div>
-                                </div>
-                                <div class="itog-second">
-                                    <div class="slider__plus__calculate" style="background-color: rgb(153, 225, 239);">
-                                        <p class="text-calc">Рост 15-28 дней мешков 0кг</p>
-                                    </div>
-                                </div>
-                                <div class="itog-three">
-                                    <div class="slider__plus__calculate" style="background-color: rgb(153, 225, 239);">
-                                        <p class="text-calc">Финиш старше 29 дней мешков 0кг</p>
-                                    </div>
-                                </div>
                             </div>
                             <img class="image-calculator" src="image/broiler-calculator.png">
                         </div>
