@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (modalId) {
                 modal = document.getElementById(modalId);
             } else {
-                // Если нет атрибута data-modal, ищем модальное окно внутри родительского элемента
+                
                 modal = this.closest('.item').querySelector('.modal');
             }
 
@@ -122,9 +122,9 @@ document.addEventListener('touchend', function(event) {
     
     if (Math.abs(deltaX) > 40) {
         if (deltaX > 0) {
-            plusSlides(-1);
-        } else {
             plusSlides(1);
+        } else {
+            plusSlides(-1);
         }
     }
 }, false);

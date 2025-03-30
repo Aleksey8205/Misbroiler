@@ -9,7 +9,6 @@ const animalImages = {
     'animal8': 'image/duck.jpg' //duck
 };
 
-// Цвета для каждого животного
 const animalColors = {
     'animal1': 'rgb(153, 225, 239)',
     'animal2': 'rgb(230, 140, 120)',
@@ -21,7 +20,6 @@ const animalColors = {
     'animal8': 'rgb(240, 104, 141)'
 };
 
-// Данные о животных (в граммах)
 const animalData = {
     'animal1': {
         A: { amount: 570 },
@@ -29,10 +27,10 @@ const animalData = {
         C: { amount: 2900 }
     },
     'animal2': {
-        A: {amount: 0},
-        B: {amount: 0},
-        C: {amount: 0},
-        D: {amount: 0}
+        A: { amount: 0 },
+        B: { amount: 0 },
+        C: { amount: 0 },
+        D: { amount: 0 }
     },
     'animal3': {
         A: { amount: 5500 },
@@ -45,7 +43,7 @@ const animalData = {
     },
     'animal5': {
         A: { amount: 800 },
-        B: { amount: 8000},
+        B: { amount: 8000 },
         C: { amount: 100 },
     },
     'animal6': {
@@ -59,18 +57,18 @@ const animalData = {
         C: { amount: 22700 }
     },
     'animal8': {
-        A: { amount: 3000},
+        A: { amount: 3000 },
         B: { amount: 5900 },
     }
 };
 
 
-// Функция для смены изображения при выборе животного
+
 function selectAnimal(animalType) {
     const imgElement = document.querySelector('.image-calculator');
-    imgElement.src = animalImages[animalType]; // Меняем изображение
-    updateResultBlocks(animalType); // Обновляем блоки результатов
-    calculateFeed(); // Перерассчитываем количество кормов
+    imgElement.src = animalImages[animalType]; 
+    updateResultBlocks(animalType); 
+    calculateFeed(); 
 }
 
 document.getElementById('heads').addEventListener('input', function () {
@@ -116,21 +114,44 @@ function calculateFeed() {
 
     updateResults(
         bagsOfFeedA, totalKilogramsA,
-        bagsOfFeedB, totalKilogramsB, 
-        bagsOfFeedC, totalKilogramsC, 
-        bagsOfFeedD, totalKilogramsD, 
+        bagsOfFeedB, totalKilogramsB,
+        bagsOfFeedC, totalKilogramsC,
+        bagsOfFeedD, totalKilogramsD,
         bagsOfFeedTotal, totalKilogramsTotal,
         animalType
-    ); // Обновляем результаты
+    );
 }
 
-// Функция для обновления результатов
+//Функция вывода рассчетов в блоки slider-bubble
 function updateResults(bagsOfFeedA, totalKilogramsA, bagsOfFeedB, totalKilogramsB, bagsOfFeedC, totalKilogramsC, bagsOfFeedD, totalKilogramsD, bagsOfFeedTotal, totalKilogramsTotal, animalType) {
-    document.getElementById('itog').innerHTML = `
-        <div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>
-    `;
+    switch (animalType) {
+        case 'animal1':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>`;
+            break;
+        case 'animal2':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">От условий</div>`;
+            break;
+        case 'animal3':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>`;
+            break;
+        case 'animal4':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">От условий</div>`;
+            break;
+        case 'animal5':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>`;
+            break;
+        case 'animal6':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>`;
+            break;
+        case 'animal7':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>`;
+            break;
+        case 'animal8':
+            document.getElementById('itog').innerHTML = `<div class="itog-all">Итого: ${totalKilogramsTotal.toFixed(1)} кг (количество мешков: ${bagsOfFeedTotal})</div>`;
+            break;
+    }
 
-    switch (animalType) { // Используем switch для выбора конкретного животного
+    switch (animalType) { 
         case 'animal1':
             document.querySelectorAll('.text-calc')[0].innerText = `Старт 0-14 дней \n${bagsOfFeedA} мешков ${totalKilogramsA.toFixed(1)}кг`;
             document.querySelectorAll('.text-calc')[1].innerText = `Рост 15-28 дней \n${bagsOfFeedB} мешков ${totalKilogramsB.toFixed(1)}кг`;
@@ -176,26 +197,25 @@ function updateResults(bagsOfFeedA, totalKilogramsA, bagsOfFeedB, totalKilograms
     }
 }
 
-// Функция для создания блоков результатов
+// Функция для создания  результатов
 function updateResultBlocks(animalType) {
     const resultContainer = document.getElementById('result');
     const data = animalData[animalType];
     const stages = Object.keys(data);
 
-    // Очищаем старые элементы
     Array.from(resultContainer.querySelectorAll('.slider__plus__calculate')).forEach(el => el.remove());
 
     // Определяем классы для родительских div'ов
     let parentDivClasses = [];
     for (let i = 1; i <= stages.length; i++) {
         if (i === 1) {
-            parentDivClasses.push('itog-first'); // Первый блок
+            parentDivClasses.push('itog-first'); 
         } else if (i === 2) {
-            parentDivClasses.push('itog-second'); // Второй блок
+            parentDivClasses.push('itog-second'); 
         } else if (i === 3) {
-            parentDivClasses.push('itog-third'); // Третий блок
+            parentDivClasses.push('itog-third');
         } else {
-            parentDivClasses.push(`itog-${i}`); // Остальные блоки
+            parentDivClasses.push(`itog-${i}`);
         }
     }
 
@@ -220,5 +240,5 @@ function updateResultBlocks(animalType) {
 document.addEventListener('DOMContentLoaded', function () {
     const initialAnimal = document.querySelector('input[name="animal"]:checked').value;
     updateResultBlocks(initialAnimal); // Создаем блоки для начального животного
-    calculateFeed(); // Выполняем первый расчет
+    calculateFeed(); 
 });

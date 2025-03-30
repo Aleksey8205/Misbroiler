@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="svg/Yuri.svg">
 </head>
+
 <body>
     <header id="header" class="header">
         <a class="logo-link" href="about.html">
@@ -37,7 +38,9 @@
                 <ul class="nav-link">
                     <li class="item-list linked "><a class="linked link-nav" href="https://yandex.ru/maps/-/CHAy7AIX">Мы
                             на карте</a></li>
-                    <li class="item-list linked"><a class="linked link-avito" href="https://www.avito.ru/podolsk/ptitsy/sutochnye_tsyplyata_broylera_4708678547?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6IjJpYjFWSVFxZXhGT1c2bVAiO31iMLHiJgAAAA">Мы на Авито</a></li>
+                    <li class="item-list linked"><a class="linked link-avito"
+                            href="https://www.avito.ru/podolsk/ptitsy/sutochnye_tsyplyata_broylera_4708678547?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6IjJpYjFWSVFxZXhGT1c2bVAiO31iMLHiJgAAAA">Мы
+                            на Авито</a></li>
                     <li class="item-list linked link-tel"><a class="linked" href="tel:+79169927150">+7(916)9927150</a>
                     </li>
                     <li class="item-list linked link-tel"><a class="linked" href="tel:+79778018260">+7(977)8018260</a>
@@ -70,7 +73,7 @@
                                 производителей. Выращиваем цыплят без применения химии в своем хозяйстве
                                 до убоя.
                             </p>
-                                <button class="carousel-btn">Подробнее</button>
+                            <button class="carousel-btn">Подробнее</button>
                         </div>
                     </div>
                     <div class="item-modal" id="item1">
@@ -93,7 +96,7 @@
                             <p class="text-item left"> Реализуем экологически чистые гипоаллергенные тушки
                                 домашнего бройлера высокого качества и внешнего вида. Вес от 2.2 кг до 3 кг.
                             </p>
-                                <button class="carousel-btn">Подробнее</button>
+                            <button class="carousel-btn">Подробнее</button>
                         </div>
                     </div>
                     <div class="item-modal" id="item2">
@@ -154,14 +157,14 @@
                                 Средний показатель 300 яиц в год массой до 70г, часто двухжелтковое.
                                 В зависимости от подвида имеет декоративный цвет скорлупы.
                             </p>
-                            <button class="carousel-btn">Подробнее</button>
+                            <!-- <button class="carousel-btn">Подробнее</button> -->
                         </div>
                     </div>
-                    <div class="item-modal" id="item5">
+                    <!--   <div class="item-modal" id="item5">
                         <p></p>
                         <span class="closed-button">×</span>
 
-                    </div>
+                    </div> -->
                     <div onclick="location.href='about.html'" data-direction="bottom" class="about-item-list item6 ">
                         <div class="card">
                             <h3 class="heading">Наши наработки</h3>
@@ -2900,92 +2903,92 @@
                             <p class="text">С помощью нашего калькулятора вы можете посчитать
                                 сколько корма понадобится
                                 для вашего поголовья. Выберите с/х животное для рассчета.
-                                Введите количество голов  и получите расчет кратный 1 мешку.<br>
+                                Введите количество голов и получите расчет кратный 1 мешку.<br>
                             </p>
                             <div class="animal-container"><!--контейнер животных-->
                                 <!--одно животное-->
-                                <div class="animals-item-list" >
+                                <div class="animals-item-list">
                                     <label for="animal1">
                                         <input id="animal1" class="animals" type="radio" name="animal" value="animal1"
                                             checked hidden>
-                                        <img src="image/broiler.svg" alt="Animal 1" class="animal-image" 
+                                        <img src="image/broiler.svg" alt="Animal 1" class="animal-image"
                                             onclick="selectAnimal('animal1')">
-                                            <span class="tooltip-text">Бройлер</span>
+                                        <span class="tooltip-text">Бройлер</span>
                                     </label>
                                 </div>
-                                
-                            <div class="animals-item-list">
+
+                                <div class="animals-item-list">
                                     <label for="animal2">
-                                        <input id="animal2" class="animals" type="radio" name="animal" value="animal2" 
+                                        <input id="animal2" class="animals" type="radio" name="animal" value="animal2"
                                             hidden>
-                                        <img src="image/rabbit.svg" alt="Animal 2" class="animal-image" 
+                                        <img src="image/rabbit.svg" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal2')">
-                                            <span class="tooltip-text">Кролик</span>
+                                        <span class="tooltip-text">Кролик</span>
                                     </label>
                                 </div>
-                                
+
                                 <div class="animals-item-list">
                                     <label for="animal3">
-                                        <input id="animal3" type="radio" class="animals" name="animal" value="animal3" 
+                                        <input id="animal3" type="radio" class="animals" name="animal" value="animal3"
                                             hidden>
-                                        <img src="image/pig.png" alt="Animal 2" class="animal-image" 
+                                        <img src="image/pig.png" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal3')">
-                                            <span class="tooltip-text">Свинья</span>
+                                        <span class="tooltip-text">Свинья</span>
                                     </label>
                                 </div>
-                                
+
                                 <div class="animals-item-list">
                                     <label for="animal4">
                                         <input id="animal4" type="radio" class="animals" name="animal" value="animal4"
                                             hidden>
-                                        <img src="image/cow.svg" alt="Animal 2" class="animal-image" 
+                                        <img src="image/cow.svg" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal4')">
-                                            <span class="tooltip-text">Корова</span>
+                                        <span class="tooltip-text">Корова</span>
                                     </label>
                                 </div>
-                                
+
                                 <div class="animals-item-list">
                                     <label for="animal5">
                                         <input id="animal5" type="radio" class="animals" name="animal" value="animal5"
                                             hidden>
-                                        <img src="image/chiken-eggz.svg" alt="Animal 2" class="animal-image" 
+                                        <img src="image/chiken-eggz.svg" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal5')">
-                                            <span class="tooltip-text">Несушка</span>
+                                        <span class="tooltip-text">Несушка</span>
                                     </label>
                                 </div>
                                 <div class="animals-item-list">
                                     <label for="animal6">
                                         <input id="animal6" type="radio" class="animals" name="animal" value="animal6"
                                             hidden>
-                                        <img src="image/perepel.svg" alt="Animal 2" class="animal-image" 
+                                        <img src="image/perepel.svg" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal6')">
-                                            <span class="tooltip-text">Перепел</span>
+                                        <span class="tooltip-text">Перепел</span>
                                     </label>
                                 </div>
-                                
+
                                 <div class="animals-item-list">
                                     <label for="animal7">
                                         <input id="animal7" type="radio" class="animals" name="animal" value="animal7"
                                             hidden>
-                                        <img src="image/indeika.svg" alt="Animal 2" class="animal-image" 
+                                        <img src="image/indeika.svg" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal7')">
-                                            <span class="tooltip-text">Индейка</span>
+                                        <span class="tooltip-text">Индейка</span>
                                     </label>
                                 </div>
-                                
+
                                 <div class="animals-item-list">
                                     <label for="animal8">
                                         <input id="animal8" type="radio" class="animals" name="animal" value="animal8"
                                             hidden>
-                                        <img src="image/duck.svg" alt="Animal 2" class="animal-image" 
+                                        <img src="image/duck.svg" alt="Animal 2" class="animal-image"
                                             onclick="selectAnimal('animal8')">
-                                            <span class="tooltip-text">Утка</span>
+                                        <span class="tooltip-text">Утка</span>
                                     </label>
                                 </div>
                             </div><!--контейнер животных-->
                             <label for="heads"></label>
                             <input placeholder="Введите кол-во голов" class="input-head" type="number" id="heads"
-                                min="1" >
+                                min="1">
                             <div id="itog">
                                 <div class="itog-all">Итого: 0 кг (колличество мешков:)</div>
                             </div>
@@ -3000,8 +3003,8 @@
             </section>
         </main>
         <div data-item="item6" data-direction="bottom" class="about-item-list animate-bottom image-megamiks">
-            <p class="text-megamiks">По нашей инициативе встретились с представителем компании «Мегакорм». 
-                Продемонстрировали своё подсобное хозяйство, 
+            <p class="text-megamiks">По нашей инициативе встретились с представителем компании «Мегакорм».
+                Продемонстрировали своё подсобное хозяйство,
                 а также обсудили вопросы сотрудничества и возможные перспективы развития и партнёрства.
             </p>
         </div>
@@ -3014,7 +3017,7 @@
                 <li class="nav-list"><a class="link" href="#calc">Калькулятор</a></li>
                 <li class="nav-list"><a class="link" href="production.html">Продукция</a></li>
                 <li class="nav-list"><a class="link" href="#slider">комбикорм</a></li>
-            <!--<li class="nav-list"><a class="link" href="">Видео</a></li>-->
+                <!--<li class="nav-list"><a class="link" href="">Видео</a></li>-->
             </ul>
         </div>
         <address class="up-col">
