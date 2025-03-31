@@ -39,7 +39,7 @@ const animalData = {
         D: { amount: 170000 }
     },
     'animal4': {
-        A: { amount: 12345 },
+        A: { amount: 0 },
     },
     'animal5': {
         A: { amount: 800 },
@@ -236,7 +236,6 @@ function updateResultBlocks(animalType) {
     });
 }
 
-// Выполняем инициализацию при загрузке страницы
 document.addEventListener('DOMContentLoaded', function () {
     const initialAnimal = document.querySelector('input[name="animal"]:checked').value;
     updateResultBlocks(initialAnimal); // Создаем блоки для начального животного

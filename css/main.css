@@ -513,7 +513,6 @@ input[type='number'] {
     position: relative;
     z-index: 1;
     bottom: 100%;
-    left: 50%;
     opacity: 0;
     transition: opacity 1s;
 }
@@ -1552,6 +1551,10 @@ input[type='number'] {
 
     .calculator-left {
         width: 300px;
+    }
+
+    .itog-4 {
+        left: 200px;
     }
 
     .animal-container {
