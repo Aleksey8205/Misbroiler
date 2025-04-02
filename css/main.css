@@ -181,6 +181,25 @@ body {
     gap: 35px;
 }
 
+.date-time {
+    align-content: center;
+    font-size: 16px;
+    font-family: opensansRegular;
+    color: #696868;
+    font-style: normal;
+    font-weight: 400;
+    border-right: 1px solid black ;
+    padding-right: 10px;
+}
+
+.public {
+    font-size: 14px;
+    font-family: opensansRegular;
+    color: #696868;
+    font-style: normal;
+    font-weight: 400;
+}
+
 .font {
     align-content: center;
     font-size: 18px;
