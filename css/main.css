@@ -433,15 +433,25 @@ body {
 }
 
 .closed-button {
-    font-size: 50px;
+    font-size: 25px;
     position: absolute;
-    background-color: #f9f9fc;
-    right: 10px;
-    top: 0;
+    right: 50px;
+    top: 10px;
     cursor: pointer;
 }
 
-
+.closed-button::after {
+    position: relative;
+    top: 6px;
+    left: 10px;
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/closed.webp);
+    background-position: bottom;
+    background-size: contain;
+}
 
 
 .checkbox-image:checked+label img {
@@ -697,7 +707,7 @@ input[type='number'] {
 
 .text-megamiks {
     color: #ffffff;
-    width: 250px;
+    width:300px;
     font-family: opensansRegular;
     font-weight: 400;
     font-style: normal;
@@ -1351,7 +1361,7 @@ input[type='number'] {
     }
 
     .text-item {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .left,
@@ -1394,7 +1404,7 @@ input[type='number'] {
     }
 
     .text {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .slider__plus__calculate {
@@ -1476,11 +1486,11 @@ input[type='number'] {
     }
 
     .nav-list {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .address {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .caption {
@@ -1488,15 +1498,19 @@ input[type='number'] {
     }
 
     .caption-slider {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .text {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .benefits-text {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+    .text-megamiks {
+        font-size: 18px;
     }
 
     .section {
@@ -1538,7 +1552,7 @@ input[type='number'] {
     }
 
     .text-item {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .card-image-left {

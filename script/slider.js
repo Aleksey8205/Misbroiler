@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Автоматическое перелистывание слайдов каждые 15 секунд
 setInterval(function() {
     plusSlides(1);
-}, 15000);
+}, 30000);
 
 
  // Функция для открытия модального окна
