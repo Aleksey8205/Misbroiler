@@ -1457,6 +1457,21 @@ input[type='number'] {
 }
 
 @media (max-width: 640px) {
+    .image-megamiks {
+        padding-right: 0;
+        justify-content: right;
+    }
+
+    .text-megamiks {
+        width: 100%;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .actual-item {
+        flex-direction: column;
+    } 
+    
     .slider__bubble {
         display: none;
     }
@@ -1493,10 +1508,6 @@ input[type='number'] {
         font-size: 18px;
     }
 
-    .actual-item {
-        flex-direction: column;
-    } 
-
     .date-time {
         border: none;
         border-bottom: 1px solid black;
@@ -1516,17 +1527,6 @@ input[type='number'] {
 
     .benefits-text {
         font-size: 18px;
-    }
-
-    .image-megamiks {
-        padding-right: 0;
-        justify-content: right;
-    }
-
-    .text-megamiks {
-        width: 100%;
-        font-size: 16px;
-        background-color: rgba(0, 0, 0, 0.3);
     }
     
     .section {
