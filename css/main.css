@@ -701,7 +701,7 @@ input[type='number'] {
     background-image: url(../image/Megamiks.jpg);
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 50px;
+    padding-right: 10px;
 
 }
 
@@ -1493,6 +1493,15 @@ input[type='number'] {
         font-size: 18px;
     }
 
+    .actual-item {
+        flex-direction: column;
+    } 
+
+    .date-time {
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
     .caption {
         font-size: 20px;
     }
@@ -1510,10 +1519,12 @@ input[type='number'] {
     }
 
     .image-megamiks {
-        padding: 0;
+        padding-right: 0;
+        justify-content: right;
     }
 
     .text-megamiks {
+        width: 100%;
         font-size: 16px;
         background-color: rgba(0, 0, 0, 0.3);
     }
