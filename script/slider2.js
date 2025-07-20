@@ -4,14 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".slide");
     let currentIndex = 0;
 
-    // Функция для отображения предыдущего слайда
     function showPrevSlide() {
         hideCurrentSlide();
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(currentIndex);
     }
 
-    // Функция для отображения следующего слайда
     function showNextSlide() {
         hideCurrentSlide();
         currentIndex = (currentIndex + 1) % slides.length;

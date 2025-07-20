@@ -72,17 +72,17 @@ function selectAnimal(animalType) {
 }
 
 document.getElementById('heads').addEventListener('input', function () {
-    calculateFeed(); // При изменении количества голов пересчитываем кормы
+    calculateFeed(); 
 });
 
-// Добавляем обработчик для радио-кнопок выбора животного
+
 document.querySelectorAll('input[name="animal"]').forEach(radioButton => {
     radioButton.addEventListener('change', function () {
-        selectAnimal(this.value); // При изменении животного вызываем смену изображения и расчеты
+        selectAnimal(this.value); 
     });
 });
 
-// Функция для расчета количества кормов
+
 function calculateFeed() {
     const headsInput = document.getElementById('heads');
     const animalType = document.querySelector('input[name="animal"]:checked').value;
@@ -122,7 +122,7 @@ function calculateFeed() {
     );
 }
 
-//Функция вывода рассчетов в блоки slider-bubble
+
 function updateResults(bagsOfFeedA, totalKilogramsA, bagsOfFeedB, totalKilogramsB, bagsOfFeedC, totalKilogramsC, bagsOfFeedD, totalKilogramsD, bagsOfFeedTotal, totalKilogramsTotal, animalType) {
     switch (animalType) {
         case 'animal1':
@@ -197,7 +197,6 @@ function updateResults(bagsOfFeedA, totalKilogramsA, bagsOfFeedB, totalKilograms
     }
 }
 
-// Функция для создания  результатов
 function updateResultBlocks(animalType) {
     const resultContainer = document.getElementById('result');
     const data = animalData[animalType];
@@ -205,7 +204,6 @@ function updateResultBlocks(animalType) {
 
     Array.from(resultContainer.querySelectorAll('.slider__plus__calculate')).forEach(el => el.remove());
 
-    // Определяем классы для родительских div'ов
     let parentDivClasses = [];
     for (let i = 1; i <= stages.length; i++) {
         if (i === 1) {
@@ -219,25 +217,23 @@ function updateResultBlocks(animalType) {
         }
     }
 
-    // Создаем родительские div'ы
     parentDivClasses.forEach(className => {
         const parentDiv = document.createElement('div');
         parentDiv.className = className;
         resultContainer.appendChild(parentDiv);
     });
 
-    // Создаем новые элементы для каждой стадии
     stages.forEach((stage, index) => {
         const stageDiv = document.createElement('div');
         stageDiv.classList.add('slider__plus__calculate');
         stageDiv.style.backgroundColor = animalColors[animalType];
-        stageDiv.innerHTML = `<p class="text-calc"> 0 мешков 0 кг</p>`; // Изначально пустые значения
+        stageDiv.innerHTML = `<p class="text-calc"> 0 мешков 0 кг</p>`; 
         resultContainer.querySelector(`.${parentDivClasses[index]}`).appendChild(stageDiv);
     });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     const initialAnimal = document.querySelector('input[name="animal"]:checked').value;
-    updateResultBlocks(initialAnimal); // Создаем блоки для начального животного
+    updateResultBlocks(initialAnimal); 
     calculateFeed(); 
 });

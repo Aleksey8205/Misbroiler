@@ -186,16 +186,14 @@ window.onclick = function(event) {
 
 function openModalImg(imgElement) {
     // Проверка ширины экрана
-    if (!window.matchMedia("(max-width: 768px)").matches) { // Вы можете изменить значение 768px на нужное вам
-        // Получение ссылки на изображение
+    if (!window.matchMedia("(max-width: 768px)").matches) { 
+
         var modal = document.getElementById("modal");
         var modalImg = document.getElementById("modalImg");
         
-        // Открытие модального окна
         modal.style.display = "flex";
         modalImg.src = imgElement.src;
         
-        // Добавление обработчика для закрытия модального окна при клике на изображение
         modalImg.onclick = closeModal;
     }
 }
